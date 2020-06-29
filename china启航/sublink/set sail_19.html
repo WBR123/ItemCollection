@@ -1,0 +1,618 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+    <title>国产大飞机C919</title>
+    <style>
+    	*{
+			margin:0px;
+			padding:0px;
+	}
+	body,#footer{
+			min-width:1336px;
+			}	      /*导航栏样式 begin*/
+.hea{
+	 background-color: #1D5BAE;
+}
+.qhcomment {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100px;
+           
+        }
+.navigation{
+		position:absolute;
+		width:1000px;
+		height:0px;
+		background:rgba(0,0,0,0.1);		
+		z-index:100;
+		margin: 0 auto;
+	}
+	.navigation .nvalist{/*导航栏*/
+		width:990px;
+		height:47px;
+		/*border:1px solid green;*/
+		/*margin-left:450px;*/
+		margin-top:24px;
+	}
+	.navigation .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:60px;
+		padding:8px 8px;
+		border-radius:5px;
+        /*z-index:auto;*/
+	}
+	.navigation .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:30px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.navigation .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+
+    	.search_box{
+		position:absolute;
+		left: 900px;
+		top: 15px;
+		/*width:253px;*/
+		/*height:50px;*/
+		border-bottom:2px solid #fff;
+		border-radius:0 0 8px 8px;
+
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:300px;
+		height:50px;
+		text-indent:2em;
+		/*border:1px solid #fff;*/
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+		.iconfont{
+			font-size:12px;
+		}
+		#logo {
+		position: absolute;
+		top: 10px;
+		left: -250px;
+		width: 280px;
+		height: 84px;
+		/*border:1px solid red;*/
+		z-index: 9;
+		background-image: url(../image/logo.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    #logo a {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: #FC9;
+        text-decoration: none;
+        line-height: 67px;
+        font-family: "Comic Sans MS", cursive;
+    }
+/*导航栏样式 end*/
+	.nva_top_list{
+		width:1920px;
+		height:112px;
+		/*border:1px solid red;*/
+		position:relative;
+		top:-24px;
+		background:rgba(0,0,0,.8);
+		/*background:#09F;*/
+		margin:auto;
+	}
+	.nva_top_list .nvalist{/*导航栏*/
+		width:990px;
+		height:87px;
+		/*border:1px solid green;*/
+		position:absolute;
+		top:17px;
+		left:50%;
+		margin-left:-490px;
+	}
+	.nva_top_list .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:50px;
+		padding:8px 8px;
+		border-radius:5px;
+		margin-top:30px;
+	}
+	.nva_top_list .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:40px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.nva_top_list .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+	
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:200px;
+		height:50px;
+		text-indent:2em;
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+	.iconfont{
+		font-family: "iconfont" !important;
+		font-size: 16px;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color:#fff;
+	}
+	.switcher_icon{
+		display:block;
+		width:115px;
+		height:30px;
+		margin-top:50px;
+		right:0px;
+		position:absolute;
+		margin-left:0px;
+		z-index:12;
+	}
+	.switcher_icon li{
+		list-style:none;
+		float:left;	
+	}
+	.switcher_icon li a {
+		display:block;
+		text-decoration:none;
+		color:#fff;
+		font-size:14px;
+		padding:4px 10px;
+		line-height:30px;
+	}
+	.Technology_bg{
+		width:1300px;
+		height:100px;
+		/*border:1px solid red;*/
+		margin:auto;
+		position:relative;
+		top:0px;
+		z-index:1;
+	}
+	.Technology_bg span:nth-child(1){
+		display:block;
+		width:inherit;
+		height:40px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:0px;
+		font-weight:bold;
+		line-height:40px;
+		font-size:18px;
+		z-index:2;
+	}
+	.Technology_bg span:nth-child(3){
+		display:block;
+		width:90px;
+		height:30px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:6px;
+		margin-left:182px;
+		line-height:30px;
+		font-size:16px;
+		color:#000;
+		font-weight:bold;
+	}
+	.Technology_bg  a{
+		margin-left:133px;
+		text-decoration:none;
+		color:#000;
+		font-size:18px;
+		line-height:40px;
+		font-weight:bold;
+
+		position:absolute;
+		z-index:555;		
+	}
+	#kj_tit{/*<span></span>*/
+		display:block;
+		width:1000px;
+		height:50px;
+		/*border:1px solid red;*/
+		font-size:35px;
+		font-weight:bold;
+		font-size:30px;
+		margin-left:350px;
+	}
+	.Aviation_technology{
+		width:1000px;
+		height:1130px;
+		/*border:1px solid pink;*/
+		margin: 0px auto;
+	}
+	/*尾部*/
+	#footer{
+			width:100%;
+			min-width: 800px;
+			height:300px;
+			background:rgba(0,0,0,0.5);
+			position:relative;
+			z-index:99;
+			margin:100px auto 0;
+		}
+		#ft_bottom{
+			width:1000px;
+			height:300px;
+			/*border:1px solid #F00;*/
+			margin:auto;
+		}
+		#footer_add1{
+			width:295px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#FFF 1px solid;
+		}
+		#footer_add1 h4{
+			margin-left:2em;
+			margin-top:1em;
+			color:#CCC;
+		}
+		#footer_add1 ul{
+			list-style:none;
+		}
+		#footer_add1 li{
+			margin-top:1em;
+		}
+		#footer_add1 li a{
+			color:#CCC;
+		}
+		#footer_add2{
+			width:450px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#fff 1px solid;
+		}
+		
+		
+		#add2_list{
+			width:430px;
+			height:52px;
+			/*background:#063;*/
+			float:left;
+			/*margin-left:10px;*/
+			margin-top:20px;
+		}
+		#add2_list li{
+			float:left;
+			margin-left:0.2em;
+			line-height:50px;
+		}
+		#add2_list li a{
+			color:#CCC;
+			text-decoration:none;
+		}
+		#add2_list ul{
+			list-style:none;
+		}
+		#add2_list p{
+			float:left;
+			margin-top:20px;
+			color:#CCC;
+			margin-left:28%;
+		}
+		#add2_ewm{
+			width:538px;
+			height:50px;
+			
+			float:left;
+			
+			margin-top:65px;
+			display:flex;
+		}
+		#add2_ewm li{
+			
+			flex:0.1;
+			width:40px;
+			height:inherit;
+			/*border:1px solid #fff;*/
+			list-style-type:none;
+		}
+		.icon_tu {
+		  font-family: "iconfont" !important;
+		  font-size: 16px;
+		  font-style: normal;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  color:#fff;
+		  font-size:25px;
+		  text-align:center;
+		  line-height:50px;
+		  cursor:pointer;
+		}
+		
+		.footer_add3{
+    		float: left;
+    		width: 250px;
+    		margin-top: 40px;
+    	}
+		.footer_add3 img{
+			width: 100px;
+			height: 100px;
+			margin-top: 65px;
+			margin-left: 20px;
+		}
+		
+			.box_ewm{
+				width:400px;
+				height:150px;
+				/*border:1px solid green;*/
+				position:absolute;
+				z-index:999999;
+				right:48px;
+				top:85px;
+			}
+			.box_ewm li{
+				display:block;
+				list-style-type:none;
+				width:162px;
+				height:150px; 
+				/*border:1px solid green;*/
+				float:left;
+				margin-left:28px;
+			}
+    </style>
+    </head>
+    
+    <body>
+    	<div class="hea">   		
+            <div class="qhcomment">
+                <div class="navigation">
+                    <!--导航栏背景-->
+                    <div id="logo">
+                        <!--logo图标-->
+                        <a href="#"></a>
+                    </div>
+                    <ul class="nvalist">
+                        <li>
+                            <a href="../index.html">网站首页</a>
+                        </li>
+                        <li>
+                            <a href="../space flight/index.html">中国航天</a>
+                        </li>
+                        <li>
+                            <a href="../aviation/index.html">中国航空</a>
+                        </li>
+                        <li>
+                            <a href="../china sailing/index.html">中国航海</a>
+                        </li>
+                        <li>
+                            <a href="../about us/about.html">关于我们</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="search_box">
+                        <input type="text" placeholder="请输入搜索内容" />
+                        <!--<input type="submit" value="" />-->
+                        <span>
+                            <i class="iconfont icon-sousuo" style="color:#fff; font-size:18px;"></i>
+                        </span>
+                    </div>
+            	</div>
+          	</div>
+        </div>
+        <!--9.3-->
+        
+        <div class="Technology_bg">
+        	<span>您所在位置：></span>
+            <a href="../index.html#indexkjyw">返回</a>
+        	<span>> 科技要闻</span>     
+        </div>
+        <div class="Aviation_technology">
+        	<span id="kj_tit">国产大飞机C919</span>
+            <span style="display:block; width:700px; height:350px; margin:40px auto 30px;">
+            	<img src="../image/C919.jpg" width="700" height="350" alt="C919">
+            </span>
+        	<p style=" margin-top:20px; line-height:30px; font-size:18px; opacity:0.7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C919大型客机，全称COMAC C919，是中国首款按照最新国际适航标准，具有自主知识产权的干线民用飞机，是由中国商用飞机有限责任公司于2008年开始研制的。C是中国英文名称“China”的首字母，也是中国商飞英文缩写COMAC的首字母，第一个“9”的寓意是天长地久，“19”代表的是中国首型大型客机最大载客量为190座。</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C919大型客机是我国按照国际民航规章自行研制、具有自主知识产权的大型喷气式民用飞机，座级158-168座，航程4075-5555公里，于2017年5月5日成功首飞 ，截至2018年2月26日累计获28家客户815架订单。</p>
+            <p style="opacity:0.7; line-height:30px; line-height:40px; margin-top:10px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018年2月6日，中国商用飞机有限责任公司宣布2021年交付首架C919单通道客机
+            </p>
+            <p style="opacity:0.7; line-height:30px; line-height:40px; margin-top:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018年10月27日，C919大型客机第二架机从山东东营胜利机场起飞，历经2小时6分，平稳降落在南昌瑶湖机场，圆满完成转场飞行任务。</p>
+            <p style="opacity:0.7; line-height:30px; line-height:40px; margin-top:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018年12月28日，C919第三架机从上海浦东国际机场第四跑道上起飞，将完成首次飞行。</p>
+            <p style="opacity:0.7; line-height:30px; line-height:40px; margin-top:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019年7月30日，C919大型客机104架机在上海浦东机场第五跑道完成中、高速滑行试验。</p>
+            <p style="opacity:0.7; line-height:30px; line-height:40px; margin-top:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019年8月1日，C919大型客机104架机在上海浦东机场完成首次飞行试验。</p>
+             <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">研制背景</span>
+             <p style="opacity:0.7; line-height:30px; line-height:40px; margin-top:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（中国飞机史上）大飞机重大专项是党中央、国务院建设创新型国家，提高我国自主创新能力和增强国家核心竞争力的重大战略决策，是《国家中长期科学与技术发展规划纲要（2006-2020）》确定的16个重大专项之一。让中国的大飞机飞上蓝天，是国家的意志，人民的意志。</p>
+             <p style="opacity:0.7; line-height:30px; line-height:40px; margin-top:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国商用飞机有限责任公司成立于2008年，总部设在上海，是实施国家大飞机重大专项中大型客机项目的主体，员工8300多人，确定了“一个总部，六大中心”的布局。设计研发中心承担了我国首次自主研制的C919中型客机、ARJ21新支线飞机的工程设计任务和技术抓总责任。</p>
+             
+        </div>
+        
+      
+        <!--尾部-->
+        
+<div id="footer">
+			<div id="ft_bottom">
+				<div id="footer_add1">
+					<h4>联系我们</h4>
+					<ul>
+						<li>
+							<a>电话：010-123456789</a>
+						</li>
+						<li>
+							<a>传真：010-123456789</a>
+						</li>
+						<li>
+							<a>地址：梧州职业学院三龙大道88号</a>
+						</li>
+						<li>
+							<a>邮编：530700</a>
+						</li>
+						<li>
+							<a>邮箱：2526193201@qq.com</a>
+						</li>
+					</ul>
+				</div>
+				<div id="footer_add2">
+					<ul id="add2_ewm">
+						<li class="icon_tu icon-weixin">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qq">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qqkongjian">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-weibo">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-zhongwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-yingwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-shouji">
+							<a href="#"></a>
+						</li>
+					</ul>
+					<div id="add2_list">
+						<ul>
+								<li>
+								<a href="../index.html">中国启航</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../space flight/index.html">中国航天</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../china sailing/index.html">中国航海</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../aviation/index.html">中国航空</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../about us/about.html">关于我们</a>
+							</li>
+						</ul>
+						<p>版权所有《2019》实验室小组</p>
+					</div>
+
+				</div>
+				<div class="footer_add3">
+					<img src="../image/qq.jpg" />
+					<img src="../image/weix.jpg"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

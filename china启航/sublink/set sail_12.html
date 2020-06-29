@@ -1,0 +1,624 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+    <title>中国航天事业</title>
+    <style>
+    	*{
+			margin:0px;
+			padding:0px;
+	}
+	body,#footer{
+			min-width:1336px;
+			}
+	       /*导航栏样式 begin*/
+.hea{
+	 background-color: #1D5BAE;
+}
+.qhcomment {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100px;
+           
+        }
+.navigation{
+		position:absolute;
+		width:1000px;
+		height:0px;
+		background:rgba(0,0,0,0.1);		
+		z-index:100;
+		margin: 0 auto;
+	}
+	.navigation .nvalist{/*导航栏*/
+		width:990px;
+		height:47px;
+		/*border:1px solid green;*/
+		/*margin-left:450px;*/
+		margin-top:24px;
+	}
+	.navigation .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:60px;
+		padding:8px 8px;
+		border-radius:5px;
+        /*z-index:auto;*/
+	}
+	.navigation .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:30px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.navigation .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+
+    	.search_box{
+		position:absolute;
+		left: 900px;
+		top: 15px;
+		/*width:253px;*/
+		/*height:50px;*/
+		border-bottom:2px solid #fff;
+		border-radius:0 0 8px 8px;
+
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:300px;
+		height:50px;
+		text-indent:2em;
+		/*border:1px solid #fff;*/
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+		.iconfont{
+			font-size:12px;
+		}
+		#logo {
+		position: absolute;
+		top: 10px;
+		left: -250px;
+		width: 280px;
+		height: 84px;
+		/*border:1px solid red;*/
+		z-index: 9;
+		background-image: url(../image/logo.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    #logo a {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: #FC9;
+        text-decoration: none;
+        line-height: 67px;
+        font-family: "Comic Sans MS", cursive;
+    }
+/*导航栏样式 end*/
+	.nva_top_list{
+		width:1920px;
+		height:112px;
+		/*border:1px solid red;*/
+		position:relative;
+		top:-24px;
+		background:rgba(0,0,0,.8);
+		/*background:#09F;*/
+		margin:auto;
+	}
+	.nva_top_list .nvalist{/*导航栏*/
+		width:990px;
+		height:87px;
+		/*border:1px solid green;*/
+		position:absolute;
+		top:17px;
+		left:50%;
+		margin-left:-490px;
+	}
+	.nva_top_list .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:50px;
+		padding:8px 8px;
+		border-radius:5px;
+		margin-top:30px;
+	}
+	.nva_top_list .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:40px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.nva_top_list .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:200px;
+		height:50px;
+		text-indent:2em;
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+	.iconfont{
+		font-family: "iconfont" !important;
+		font-size: 16px;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color:#fff;
+	}
+	.switcher_icon{
+		display:block;
+		width:115px;
+		height:30px;
+		margin-top:50px;
+		right:0px;
+		position:absolute;
+		margin-left:0px;
+		z-index:12;
+	}
+	.switcher_icon li{
+		list-style:none;
+		float:left;	
+	}
+	.switcher_icon li a {
+		display:block;
+		text-decoration:none;
+		color:#fff;
+		font-size:14px;
+		padding:4px 10px;
+		line-height:30px;
+	}
+	.Technology_bg{
+		width:1300px;
+		height:100px;
+		/*border:1px solid red;*/
+		margin:auto;
+		position:relative;
+		top:0px;
+		z-index:1;
+	}
+	.Technology_bg span:nth-child(1){
+		display:block;
+		width:inherit;
+		height:40px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:0px;
+		font-weight:bold;
+		line-height:40px;
+		font-size:18px;
+		z-index:2;
+	}
+	.Technology_bg span:nth-child(3){
+		display:block;
+		width:90px;
+		height:30px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:6px;
+		margin-left:182px;
+		line-height:30px;
+		font-size:16px;
+		color:#000;
+		font-weight:bold;
+	}
+	.Technology_bg  a{
+		margin-left:133px;
+		text-decoration:none;
+		color:#000;
+		font-size:18px;
+		line-height:40px;
+		font-weight:bold;
+
+		position:absolute;
+		z-index:555;		
+	}
+	#kj_tit{/*<span></span>*/
+		display:block;
+		width:1000px;
+		height:50px;
+		/*border:1px solid red;*/
+		font-size:35px;
+		font-weight:bold;
+		font-size:30px;
+		margin-left:350px;
+	}
+	.Aviation_technology{
+		width:1000px;
+		height:1940px;
+		/*border:1px solid pink;*/
+		margin: 0px auto;
+	}
+	/*尾部CSS*/
+		#footer{
+			width:100%;
+			min-width: 800px;
+			height:300px;
+			background:rgba(0,0,0,0.5);
+			position:relative;
+			z-index:99;
+			margin:150px auto 0;
+		}
+		#ft_bottom{
+			width:1000px;
+			height:300px;
+			/*border:1px solid #F00;*/
+			margin:auto;
+		}
+		#footer_add1{
+			width:295px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#FFF 1px solid;
+		}
+		#footer_add1 h4{
+			margin-left:2em;
+			margin-top:1em;
+			color:#CCC;
+		}
+		#footer_add1 ul{
+			list-style:none;
+		}
+		#footer_add1 li{
+			margin-top:1em;
+		}
+		#footer_add1 li a{
+			color:#CCC;
+		}
+		#footer_add2{
+			width:450px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#fff 1px solid;
+		}
+		
+		
+		#add2_list{
+			width:430px;
+			height:52px;
+			/*background:#063;*/
+			float:left;
+			/*margin-left:10px;*/
+			margin-top:20px;
+		}
+		#add2_list li{
+			float:left;
+			margin-left:0.2em;
+			line-height:50px;
+		}
+		#add2_list li a{
+			color:#CCC;
+			text-decoration:none;
+		}
+		#add2_list ul{
+			list-style:none;
+		}
+		#add2_list p{
+			float:left;
+			margin-top:20px;
+			color:#CCC;
+			margin-left:28%;
+		}
+		#add2_ewm{
+			width:538px;
+			height:50px;
+			
+			float:left;
+			
+			margin-top:65px;
+			display:flex;
+		}
+		#add2_ewm li{
+			
+			flex:0.1;
+			width:40px;
+			height:inherit;
+			/*border:1px solid #fff;*/
+			list-style-type:none;
+		}
+		.icon_tu {
+		  font-family: "iconfont" !important;
+		  font-size: 16px;
+		  font-style: normal;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  color:#fff;
+		  font-size:25px;
+		  text-align:center;
+		  line-height:50px;
+		  cursor:pointer;
+		}
+		
+		.footer_add3{
+    		float: left;
+    		width: 250px;
+    		margin-top: 40px;
+    	}
+		.footer_add3 img{
+			width: 100px;
+			height: 100px;
+			margin-top: 65px;
+			margin-left: 20px;
+		}
+		
+			.box_ewm{
+				width:400px;
+				height:150px;
+				/*border:1px solid green;*/
+				position:absolute;
+				z-index:999999;
+				right:48px;
+				top:85px;
+			}
+			.box_ewm li{
+				display:block;
+				list-style-type:none;
+				width:162px;
+				height:150px; 
+				/*border:1px solid green;*/
+				float:left;
+				margin-left:28px;
+			}
+    </style>
+    </head>
+    
+    <body>
+    	<div class="hea">   		
+            <div class="qhcomment">
+                <div class="navigation">
+                    <!--导航栏背景-->
+                    <div id="logo">
+                        <!--logo图标-->
+                        <a href="#"></a>
+                    </div>
+                    <ul class="nvalist">
+                        <li>
+                            <a href="../index.html">网站首页</a>
+                        </li>
+                        <li>
+                            <a href="../space flight/index.html">中国航天</a>
+                        </li>
+                        <li>
+                            <a href="../aviation/index.html">中国航空</a>
+                        </li>
+                        <li>
+                            <a href="../china sailing/index.html">中国航海</a>
+                        </li>
+                        <li>
+                            <a href="../about us/about.html">关于我们</a>
+                        </li>
+                       
+                    </ul>
+                    <div class="search_box">
+                        <input type="text" placeholder="请输入搜索内容" />
+                        <!--<input type="submit" value="" />-->
+                        <span>
+                            <i class="iconfont icon-sousuo" style="color:#fff; font-size:18px;"></i>
+                        </span>
+                    </div>
+            	</div>
+          	</div>
+        </div>
+        <!--9.3-->
+        
+        <div class="Technology_bg">
+        	<span>您所在位置：></span>
+            <a href="../index.html#indexht">返回</a>
+        	<span>>航天事业</span>     
+        </div>
+        <div class="Aviation_technology">
+        	<span id="kj_tit">中国航天事业</span>
+        	<p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中华人民共和国的航天事业起始于1956年。中国于1970年4月24日发射第一颗人造地球卫星，是继苏联、美国、法国、日本之后世界上第5个能独立发射人造卫星的国家。</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国发展航天事业的宗旨是：探索外太空，扩展对地球和宇宙的认识；和平利用外太空，促进人类文明和社会进步，造福全人类；满足经济建设、科技发展、国家安全和社会进步等方面的需求，提高全民科学素质，维护国家权益，增强综合国力。中国发展航天事业贯彻国家科技事业发展的指导方针，即自主创新、重点跨越、支撑发展、引领未来。</p>
+                   
+            <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">概述</span>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国务院新闻办公室发表的《2016中国的航天》白皮书显示，2011年至今，中国航天事业持续快速发展，自主创新能力显著增强，进入空间能力大幅提升。2016年，新一代的长征七号、长征五号运载火箭相继首飞成功，使中国火箭运载能力进入国际先进行列，中国运载火箭成功升级换代，擎起迈向航天强国的中国力量。</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一组数据显示：长征系列运载火箭完成第1个100次发射历时37年，成功率93%；第二个100次发射仅历时7年，成功率98%。发射周期从60天缩减到不到20天。这表明我国火箭设计、制造及管理能力得到大幅提升，研制模式开启信息化时代。</p>
+            
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;近五年来，从神舟飞船和长征二号F运载火箭组成的载人天地往返运输系统首次应用性飞行，到长征七号运载火箭与天舟货运飞船组成空间站货物运输系统“试运行”，我国载人航天工程实现了空间实验室阶段“成功首飞、稳定运行、健康驻留、安全返回、顺利补加、成果丰硕”的既定任务目标，取得了重要的创新成果和宝贵经验。</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国防科工局副局长、国家航天局副局长吴艳华表示，中国航天创建60余年来，取得了以“两弹一星”、载人航天、月球探测为代表的一系列辉煌成就。随着未来中国对重型火箭、无毒无污染中型火箭、低成本运输火箭等关键技术的不断攻关，中国进入空间能力将进一步提升，探索浩瀚宇宙的脚步将越发轻快。</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;航天事业可以分为三部分：一是空间技术，也就是各种火箭、卫星、飞行器的制造和发射技术等；二是空间应用，是让航天技术产生实际应用，比如提供通讯和气象观测服务等；三是空间科学，即不以技术和应用为目的，而是探索和发现新规律、新现象。</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016年，中国航天对“星空奥秘”的探索捷报频传。</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——首颗微重力科学实验卫星实践十号利用太空中微重力等特殊环境完成19项科学实验并成功返回；</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——暗物质卫星“悟空”在轨一年多，探测到黑洞爆发等多项发现，未来还会带来更多惊喜；</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——世界首颗量子科学实验卫星“墨子号”开启人类在空间尺度上的量子科学实验，为未来在外太空开展广义相对论、量子引力等物理学基本原理的检验做好了坚实的技术准备；</p>
+            <span style="display:block; width:700px; height:350px; margin:40px auto 5px;">
+            	<img src="../image/htsy_1.jpg" width="700" height="350" alt="hangkong_1">
+            </span>
+            <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">反卫星武器</span>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一些西方论者将中国的太空战策略分为两类：一类是所谓的“防御性策略”，即通过外交手段，阻遏潜在敌人推动太空军事化的努力；另一类是“进攻性策略”，就是通过部署太空武器，保护自己在太空中的利益。我们看来更为关注进攻性策略。</p> 
+             <p style="opacity:0.7; margin-top:15px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2012年4月，中国用一枚长征二号丙火箭将一颗小型卫星和一颗微型卫星送入太空，西方军事界对于中国反卫星武器研制计划的忧虑达到了一个新的高度。据美国军方的判断，中国到2005年将拥有两种用于对付近地轨道卫星的反卫星手段：一是地基激光致盲器甚至大功率激光武器，这是美国国防部自1998年起，就在每年中国军力报告中一直强调的；二是以KT―1火箭为基础，带有小型或者微型卫星拦截器的直接攻击型反卫星武器。所谓KT―1火箭，是在DF―21中程导弹的基础上开发的一种四级固体燃料火箭，是一种小型机动太空运载火箭（简称SLV），这种火箭使得中国能够随意选择时机，对敌方卫星进行出其不意的攻击。据西方媒体报道，中国正在DF―31洲际导弹的基础上研制KT―2型火箭，并在DF―31甲型洲际导弹的基础上研制KT―2A火箭，这两种使用固体燃料的机动火箭能够瞄准地球同步轨道和极地轨道，而美国的许多“敏感”卫星正是在这些轨道上运行的。一些西方军事专家相信，中国空间技术研究院正在研发一种“寄生卫星”，这种小型或微型卫星可以用KT系列火箭发射，通过附着在敌方的人造天体之上实施干扰或者破坏，或者通过直接撞击，用于攻击空间站、天基激光系统以及其他卫星。中国的《导弹与航天运载技术》杂志还讨论了如何利用全球定位技术来确定近地微型卫星的高度，这家杂志还将用三年的时间，开辟专栏讨论如何攻击太空的卫星。</p>
+             <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美军的通信、侦察和监视系统严重依赖于太空，空间设施事实上美军最重要的“节点”（Node）之一。因此，在未来的中美战争中，中国将高度重视太空战。只要能够摧毁美国天基系统，就等于击中了阿基里斯的脚后踵，这对于中国取得战场优势具有至关重要的作用。如果能够做到这一点，美国在通信、控制、指挥、计算机、情报、侦察和监视方面拥有的优势将化为乌有，从而不得不跟中国打一场二十世纪的传统战争，而后者在这方面显然更为得心应手。</p>
+             <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014年3月17日刊登的卫星照片分析报告指出，中国大陆2013年5月以研究为名发射的火箭，事实上是在试射机动式地面弹道导弹反卫星武器。</p>
+       
+        </div>
+        
+      
+        <!--尾部-->
+        <div id="footer">
+			<div id="ft_bottom">
+				<div id="footer_add1">
+					<h4>联系我们</h4>
+					<ul>
+						<li>
+							<a>电话：010-123456789</a>
+						</li>
+						<li>
+							<a>传真：010-123456789</a>
+						</li>
+						<li>
+							<a>地址：梧州职业学院三龙大道88号</a>
+						</li>
+						<li>
+							<a>邮编：530700</a>
+						</li>
+						<li>
+							<a>邮箱：2526193201@qq.com</a>
+						</li>
+					</ul>
+				</div>
+				<div id="footer_add2">
+					<ul id="add2_ewm">
+						<li class="icon_tu icon-weixin">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qq">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qqkongjian">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-weibo">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-zhongwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-yingwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-shouji">
+							<a href="#"></a>
+						</li>
+					</ul>
+					<div id="add2_list">
+						<ul>
+							<li>
+								<a href="../index.html">中国启航</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../space flight/index.html">中国航天</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../china sailing/index.html">中国航海</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../aviation/index.html">中国航空</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../about us/about.html">关于我们</a>
+							</li>
+						</ul>
+						<p>版权所有《2019》实验室小组</p>
+					</div>
+
+				</div>
+				<div class="footer_add3">
+					<img src="../image/weix.jpg" />
+					<img src="../image/qq.jpg">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

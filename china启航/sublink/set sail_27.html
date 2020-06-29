@@ -1,0 +1,651 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+    <title>前沿技术</title>
+    <style>
+    	*{
+			margin:0px;
+			padding:0px;
+	}
+	body{
+		max-width:100%;
+	}
+	       /*导航栏样式 begin*/
+.hea{
+	 background-color: #1D5BAE;
+}
+.qhcomment {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100px;
+           
+        }
+.navigation{
+		position:absolute;
+		width:1000px;
+		height:0px;
+		background:rgba(0,0,0,0.1);		
+		z-index:100;
+		margin: 0 auto;
+	}
+	.navigation .nvalist{/*导航栏*/
+		width:990px;
+		height:47px;
+		/*border:1px solid green;*/
+		/*margin-left:450px;*/
+		margin-top:24px;
+	}
+	.navigation .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:60px;
+		padding:8px 8px;
+		border-radius:5px;
+        /*z-index:auto;*/
+	}
+	.navigation .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:30px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.navigation .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+
+    	.search_box{
+		position:absolute;
+		left: 900px;
+		top: 15px;
+		/*width:253px;*/
+		/*height:50px;*/
+		border-bottom:2px solid #fff;
+		border-radius:0 0 8px 8px;
+
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:300px;
+		height:50px;
+		text-indent:2em;
+		/*border:1px solid #fff;*/
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+		.iconfont{
+			font-size:12px;
+		}
+		#logo {
+		position: absolute;
+		top: 10px;
+		left: -250px;
+		width: 280px;
+		height: 84px;
+		/*border:1px solid red;*/
+		z-index: 9;
+		background-image: url(../image/logo.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    #logo a {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: #FC9;
+        text-decoration: none;
+        line-height: 67px;
+        font-family: "Comic Sans MS", cursive;
+    }
+/*导航栏样式 end*/
+	.nva_top_list{
+		width:1920px;
+		height:112px;
+		/*border:1px solid red;*/
+		position:relative;
+		top:-24px;
+		background:rgba(0,0,0,.8);
+		/*background:#09F;*/
+		margin:auto;
+	}
+	.nva_top_list .nvalist{/*导航栏*/
+		width:990px;
+		height:87px;
+		/*border:1px solid green;*/
+		position:absolute;
+		top:17px;
+		left:50%;
+		margin-left:-490px;
+	}
+	.nva_top_list .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:50px;
+		padding:8px 8px;
+		border-radius:5px;
+		margin-top:30px;
+	}
+	.nva_top_list .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:40px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.nva_top_list .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+	
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:200px;
+		height:50px;
+		text-indent:2em;
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+	.iconfont{
+		font-family: "iconfont" !important;
+		font-size: 16px;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color:#fff;
+	}
+	.switcher_icon{
+		display:block;
+		width:115px;
+		height:30px;
+		margin-top:50px;
+		right:0px;
+		position:absolute;
+		margin-left:0px;
+		z-index:12;
+	}
+	.switcher_icon li{
+		list-style:none;
+		float:left;	
+	}
+	.switcher_icon li a {
+		display:block;
+		text-decoration:none;
+		color:#fff;
+		font-size:14px;
+		padding:4px 10px;
+		line-height:30px;
+	}
+	.Technology_bg{
+		width:1300px;
+		height:100px;
+		/*border:1px solid red;*/
+		margin:auto;
+		position:relative;
+		top:0px;
+		z-index:1;
+	}
+	.Technology_bg span:nth-child(1){
+		display:block;
+		width:inherit;
+		height:40px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:0px;
+		font-weight:bold;
+		line-height:40px;
+		font-size:18px;
+		z-index:2;
+	}
+	.Technology_bg span:nth-child(3){
+		display:block;
+		width:90px;
+		height:30px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:6px;
+		margin-left:182px;
+		line-height:30px;
+		font-size:16px;
+		color:#000;
+		font-weight:bold;
+	}
+	.Technology_bg  a{
+		margin-left:133px;
+		text-decoration:none;
+		color:#000;
+		font-size:18px;
+
+		line-height:40px;
+		font-weight:bold;
+
+		position:absolute;
+		z-index:555;		
+	}
+	#kj_tit{/*<span></span>*/
+		display:block;
+		width:1000px;
+		height:50px;
+		/*border:1px solid red;*/
+		font-size:35px;
+		font-weight:bold;
+		font-size:30px;
+		margin-left:350px;
+	}
+	.Aviation_technology{
+		width:1000px;
+		height:1349px;
+		/*border:1px solid pink;*/
+		margin: 0px auto;
+	}
+	/*尾部*/
+			#footer{
+			width:100%;
+			min-width: 800px;
+			height:300px;
+			background:rgba(0,0,0,0.5);
+			position:relative;
+			z-index:99;
+			margin:150px auto 0;
+		}
+		#ft_bottom{
+			width:1000px;
+			height:300px;
+			/*border:1px solid #F00;*/
+			margin:auto;
+		}
+		#footer_add1{
+			width:295px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#FFF 1px solid;
+		}
+		#footer_add1 h4{
+			margin-left:2em;
+			margin-top:1em;
+			color:#CCC;
+		}
+		#footer_add1 ul{
+			list-style:none;
+		}
+		#footer_add1 li{
+			margin-top:1em;
+		}
+		#footer_add1 li a{
+			color:#CCC;
+		}
+		#footer_add2{
+			width:450px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#fff 1px solid;
+		}
+		
+		
+		#add2_list{
+			width:430px;
+			height:52px;
+			/*background:#063;*/
+			float:left;
+			/*margin-left:10px;*/
+			margin-top:20px;
+		}
+		#add2_list li{
+			float:left;
+			margin-left:0.2em;
+			line-height:50px;
+		}
+		#add2_list li a{
+			color:#CCC;
+			text-decoration:none;
+		}
+		#add2_list ul{
+			list-style:none;
+		}
+		#add2_list p{
+			float:left;
+			margin-top:20px;
+			color:#CCC;
+			margin-left:28%;
+		}
+		#add2_ewm{
+			width:538px;
+			height:50px;
+			
+			float:left;
+			
+			margin-top:65px;
+			display:flex;
+		}
+		#add2_ewm li{
+			
+			flex:0.1;
+			width:40px;
+			height:inherit;
+			/*border:1px solid #fff;*/
+			list-style-type:none;
+		}
+		.icon_tu {
+		  font-family: "iconfont" !important;
+		  font-size: 16px;
+		  font-style: normal;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  color:#fff;
+		  font-size:25px;
+		  text-align:center;
+		  line-height:50px;
+		  cursor:pointer;
+		}
+		
+		.footer_add3{
+    		float: left;
+    		width: 250px;
+    		margin-top: 40px;
+    	}
+		.footer_add3 img{
+			width: 100px;
+			height: 100px;
+			margin-top: 65px;
+			margin-left: 20px;
+		}
+		
+			.box_ewm{
+				width:400px;
+				height:150px;
+				/*border:1px solid green;*/
+				position:absolute;
+				z-index:999999;
+				right:48px;
+				top:85px;
+			}
+			.box_ewm li{
+				display:block;
+				list-style-type:none;
+				width:162px;
+				height:150px; 
+				/*border:1px solid green;*/
+				float:left;
+				margin-left:28px;
+			}
+    </style>
+    </head>
+    
+    <body>
+    	<div class="hea">   		
+            <div class="qhcomment">
+                <div class="navigation">
+                    <!--导航栏背景-->
+                    <div id="logo">
+                        <!--logo图标-->
+                        <a href="#"></a>
+                    </div>
+                    <ul class="nvalist">
+                        <li>
+                            <a href="../index.html">网站首页</a>
+                        </li>
+                        <li>
+                            <a href="../space flight/index.html">中国航天</a>
+                        </li>
+                        <li>
+                            <a href="../aviation/index.html">中国航空</a>
+                        </li>
+                        <li>
+                            <a href="../china sailing/index.html">中国航海</a>
+                        </li>
+                        <li>
+                            <a href="../about us/about.html">关于我们</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="search_box">
+                        <input type="text" placeholder="请输入搜索内容" />
+                        <!--<input type="submit" value="" />-->
+                        <span>
+                            <i class="iconfont icon-sousuo" style="color:#fff; font-size:18px;"></i>
+                        </span>
+                    </div>
+            	</div>
+          	</div>
+        </div>
+        <!--9.3-->
+        
+        <div class="Technology_bg">
+        	<span>您所在位置：></span>
+            <a href="../index.html#indexkjyw">返回</a>
+        	<span>> 科技要闻</span>     
+        </div>
+        <div class="Aviation_technology">
+        	<span id="kj_tit">信息技术</span>        
+        	<p style=" margin-top:10px; line-height:30px; font-size:18px; opacity:0.7; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	一、高性能计算技术	
+             </p>
+            <p style=" margin-top:20px; line-height:30px; font-size:18px; opacity:0.7; ">
+            	超级计算机综合技术水平取得历史性突破，进入世界领先行列。在 2010年11月世界超级计算机TOP 500中， 中国研制的高效能计算机系统“天河一号”排名第一，“曙光星云”位居第三。
+            </p>
+            <span style="display:block; width:700px; height:350px; margin:0px auto 30px;">
+            	<img src="../image/tjcjjsj.JPG" width="700" height="350" alt="C919">
+            </span>
+            <p style=" margin-top:20px; line-height:30px; font-size:18px; opacity:0.7; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	建成了具有300万亿次以上聚合浮点计算能力和1 000万亿字节以上存储能力的中国国家网格服务与应用环境，在能源、机械制造、飞机设计、气象预报、新药研发等领域得到成功应用。
+            </p>
+                
+        	<p style=" margin-top:10px; line-height:30px; font-size:18px; opacity:0.7; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	二、通信技术
+             </p>
+            <p style=" margin-top:20px; line-height:30px; font-size:18px; opacity:0.7; ">
+            	全球最大规模的新一代网络与业务试验床成功实施， 可重构路由交换平台等关键技术取得突破，技术水平达到世界前列。
+            </p>
+            <p style=" margin-top:20px; line-height:30px; font-size:18px; opacity:0.7; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	完成了基于“北斗”的移动通信试验系统的设计与开发，支持短消息、话音业务和数据广播业务， 为现阶段在应急状态下采用自主技术开展通信服务提供了重要技术手段。 研制的无线宽带快速组网系统已在上海世博会和广州亚运会安保获得应用， 并推广至公安、 电力、 交通、 水利和地震等众多领域。
+            </p>
+            <p style=" margin-top:20px; line-height:30px; font-size:18px; opacity:0.7; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	在网络通信领域， 向国际标准化组织提交标准建议提案文稿超过100项， 其中8项被批准成为国际标准，31项被国际标准化组织采纳。
+            </p>
+            
+            <p style=" margin-top:10px; line-height:30px; font-size:18px; opacity:0.7; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	三、虚拟现实技术
+             </p>
+            <p style=" margin-top:20px; line-height:30px; font-size:18px; opacity:0.7; ">
+            	研制成功虚实融合的协同工作环境支撑技术与系统， 建成了面向飞机驾驶舱设计和面向飞机关键部件拆装维护及训练两个应用示范系统， 为中国虚实融合技术在相关领域的发展奠定了坚实基础。
+            </p>
+            <p style=" margin-top:20px; line-height:30px; font-size:18px; opacity:0.7; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	研制了具有自主知识产权的虚拟现实的绘制内核和物理引擎系统并实现了初步应用。 在三维显示新机理、基于肌电传感器和加速计的手势交互设备等方面取得了创新性成果。
+            </p>
+            <p style=" margin-top:10px; line-height:30px; font-size:18px; opacity:0.7; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	四、信息安全技术
+             </p>
+            <p style=" margin-top:20px; line-height:30px; font-size:18px; opacity:0.7; ">
+            	研制成功网络安全事件监控系统， 采用了新型网络安全监控体系结构， 显著提升了大规模突发事件的协同分析与应急处置、 网络安全态势分析及预测能力， 有效降低了网络安全事件带来的危害，为网络与信息系统提供了安全保障。
+            </p>
+            <p style=" margin-top:20px; line-height:30px; font-size:18px; opacity:0.7; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	在网络认证授权、 反网络垃圾信息、 安全操作系统、 防伪等方面的关键技术取得重要进展，部分技术修订了相关国家标准，形成了国家标准草案及国际标准草案。
+            </p>
+            <p style=" margin-top:20px; line-height:30px; font-size:18px; opacity:0.7; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            	完成了适用于计算型、 事务处理型和服务型信息系统等级保护模拟平台， 为信息系统安全建设提供了示范环境。
+                        </p>
+        </div>
+        
+      
+        <!--尾部-->
+        
+<div id="footer">
+			<div id="ft_bottom">
+				<div id="footer_add1">
+					<h4>联系我们</h4>
+					<ul>
+						<li>
+							<a>电话：010-123456789</a>
+						</li>
+						<li>
+							<a>传真：010-123456789</a>
+						</li>
+						<li>
+							<a>地址：梧州职业学院三龙大道88号</a>
+						</li>
+						<li>
+							<a>邮编：530700</a>
+						</li>
+						<li>
+							<a>邮箱：2526193201@qq.com</a>
+						</li>
+					</ul>
+				</div>
+				<div id="footer_add2">
+					<ul id="add2_ewm">
+						<li class="icon_tu icon-weixin">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qq">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qqkongjian">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-weibo">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-zhongwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-yingwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-shouji">
+							<a href="#"></a>
+						</li>
+					</ul>
+					<div id="add2_list">
+						<ul>
+								<li>
+								<a href="../index.html">中国启航</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../space flight/index.html">中国航天</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../china sailing/index.html">中国航海</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../aviation/index.html">中国航空</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../about us/about.html">关于我们</a>
+							</li>
+						</ul>
+						<p>版权所有《2019》实验室小组</p>
+					</div>
+
+				</div>
+				<div class="footer_add3">
+					<img src="../image/qq.jpg" />
+					<img src="../image/weix.jpg"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

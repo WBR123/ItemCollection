@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+<title>哥伦布发现美洲新大陆</title>
+<style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	    /*导航栏样式 begin*/
+.hea{
+	 background-color: #1D5BAE;
+}
+.qhcomment {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100px;
+           
+        }
+.navigation{
+		position:absolute;
+		width:1000px;
+		height:0px;
+		background:rgba(0,0,0,0.1);		
+		z-index:100;
+		margin: 0 auto;
+	}
+	.navigation .nvalist{/*导航栏*/
+		width:990px;
+		height:47px;
+		/*border:1px solid green;*/
+		/*margin-left:450px;*/
+		margin-top:24px;
+	}
+	.navigation .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:60px;
+		padding:8px 8px;
+		border-radius:5px;
+        /*z-index:auto;*/
+	}
+	.navigation .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:30px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.navigation .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+
+    	.search_box{
+		position:absolute;
+		left: 900px;
+		top: 15px;
+		width:253px;
+		height:50px;
+		border-bottom:2px solid #fff;
+		border-radius:0 0 8px 8px;
+
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:300px;
+		height:50px;
+		text-indent:2em;
+		/*border:1px solid #fff;*/
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+		.iconfont{
+			font-size:12px;
+		}
+		#logo {
+		position: absolute;
+		top: 10px;
+		left: -250px;
+		width: 280px;
+		height: 84px;
+		/*border:1px solid red;*/
+		z-index: 9;
+		background-image: url(../image/logo.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    #logo a {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: #FC9;
+        text-decoration: none;
+        line-height: 67px;
+        font-family: "Comic Sans MS", cursive;
+    }
+/*导航栏样式 end*/
+		.nva_top_list{
+			width:1920px;
+			height:112px;
+			/*border:1px solid red;*/
+			position:relative;
+			top:-24px;
+			background:rgba(0,0,0,.8);
+			margin:auto;
+			/*background:#09F;*/
+		}
+		.nva_top_list .nvalist{/*导航栏*/
+			width:990px;
+			height:87px;
+			/*border:1px solid green;*/
+			position:absolute;
+			top:17px;
+			left:50%;
+			margin-left:-490px;
+		}
+		.nva_top_list .nvalist li{
+			display:blck;
+			width:90px;
+			height:30px;
+			/*border:1px solid red;*/
+			list-style:none;
+			float:left;
+			margin-left:60px;
+			padding:8px 8px;
+			border-radius:5px;
+			margin-top:30px;
+		}
+		.nva_top_list .nvalist li a{
+			display:inline-block;
+			position:absolute;
+			top:28px;
+			width:127px;
+			height:42px;
+			padding:4px;
+			margin-left:-23px;
+			line-height:40px;
+			/*border:1px solid red;*/
+			text-align:center;
+			text-decoration:none;
+			font-size:20px;
+			color:#FFF;
+			font-weight:600;
+			border-radius:5px;
+			font-family:"Comic Sans MS", cursive;
+		}
+		.nva_top_list .nvalist li:hover{
+			border-radius:5px;		
+			border-bottom:2.5px solid #F60;
+		}
+		
+		.search_box span{
+			display:inline-block;
+			position:absolute;
+			right:5px;
+			top:50%;
+			margin-top:-6px;
+			width:29px;
+			height:28px;
+			cursor:pointer;
+			/*background:#fff;*/
+		}
+		.search_box input[type=text]{
+			display:inline-block;
+			width:460px;
+			height:50px;
+			text-indent:2em;
+			top:0px;
+			background:none;
+			border:none;
+			color:#fff;
+		}
+		.search_box input[type=submit]{
+			display:inline-block;
+			position:absolute;
+			width:71px;
+			height:52px;
+			top:0px;
+			border:none;
+			right:0px;		
+			color:#fff;
+			font-family:'微软雅黑';
+			font-weight:bold;
+			font-size:1.8em;
+			background:none;
+		}
+		.iconfont{
+			font-family: "iconfont" !important;
+			font-size: 16px;
+			font-style: normal;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			color:#fff;
+		}
+		.switcher_icon{
+			display:block;
+			width:115px;
+			height:30px;
+			margin-top:50px;
+			right:-24px;
+			position:absolute;
+			margin-left:0px;
+			z-index:12;
+		}
+		.switcher_icon li{
+			list-style:none;
+			float:left;	
+		}
+		.switcher_icon li a {
+			display:block;
+			text-decoration:none;
+			color:#fff;
+			font-size:14px;
+			padding:4px 10px;
+			line-height:30px;
+		}
+		.all-main{
+			width:1310px;
+			height:100%;
+			max-height:1080px;
+			background:#FFF;
+			margin:auto;
+		}
+		/*尾部CSS*/
+		#footer{
+			width:100%;
+			min-width: 800px;
+			height:300px;
+			background:rgba(0,0,0,0.5);
+			position:relative;
+			z-index:99;
+			margin:150px auto 0;
+		}
+		#ft_bottom{
+			width:1000px;
+			height:300px;
+			/*border:1px solid #F00;*/
+			margin:auto;
+		}
+		#footer_add1{
+			width:295px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#FFF 1px solid;
+		}
+		#footer_add1 h4{
+			margin-left:2em;
+			margin-top:1em;
+			color:#CCC;
+		}
+		#footer_add1 ul{
+			list-style:none;
+		}
+		#footer_add1 li{
+			margin-top:1em;
+		}
+		#footer_add1 li a{
+			color:#CCC;
+		}
+		#footer_add2{
+			width:450px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#fff 1px solid;
+		}
+		
+		
+		#add2_list{
+			width:430px;
+			height:52px;
+			/*background:#063;*/
+			float:left;
+			/*margin-left:10px;*/
+			margin-top:20px;
+		}
+		#add2_list li{
+			float:left;
+			margin-left:0.2em;
+			line-height:50px;
+		}
+		#add2_list li a{
+			color:#CCC;
+			text-decoration:none;
+		}
+		#add2_list ul{
+			list-style:none;
+		}
+		#add2_list p{
+			float:left;
+			margin-top:20px;
+			color:#CCC;
+			margin-left:28%;
+		}
+		#add2_ewm{
+			width:538px;
+			height:50px;
+			
+			float:left;
+			
+			margin-top:65px;
+			display:flex;
+		}
+		#add2_ewm li{
+			
+			flex:0.1;
+			width:40px;
+			height:inherit;
+			/*border:1px solid #fff;*/
+			list-style-type:none;
+		}
+		.icon_tu {
+		  font-family: "iconfont" !important;
+		  font-size: 16px;
+		  font-style: normal;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  color:#fff;
+		  font-size:25px;
+		  text-align:center;
+		  line-height:50px;
+		  cursor:pointer;
+		}
+		
+		.footer_add3{
+    		float: left;
+    		width: 250px;
+    		margin-top: 40px;
+    	}
+		.footer_add3 img{
+			width: 100px;
+			height: 100px;
+			margin-top: 65px;
+			margin-left: 20px;
+		}
+		
+		.box_ewm{
+			width:400px;
+			height:150px;
+			/*border:1px solid green;*/
+			position:absolute;
+			z-index:999999;
+			right:48px;
+			top:85px;
+		}
+		.box_ewm li{
+			display:block;
+			list-style-type:none;
+			width:162px;
+			height:150px; 
+			/*border:1px solid green;*/
+			float:left;
+			margin-left:28px;
+		}	
+	
+	.content{
+		width:1920px;
+		height:2715px;
+		background: url(file:///D|/image/25.jpg);
+		position:relative;
+		background-repeat:no-repeat;
+		background-size:cover;
+		top:-25px;
+		left:0px;
+		margin: 0px auto;
+		z-index:15;
+		}
+	.cont_1{
+		width:900px;
+		height:600px;
+	/*	background: #0F0;*/
+		list-style:none;
+		/*position:absolute;*/
+		margin-left:550px;
+		}
+	.cont-first{
+			list-style:none;
+			text-align:center;
+			margin:auto;
+			margin:0px;
+			padding:0px;			
+		}
+	.cont-first li:nth-child(1){
+		width:490px;
+		height:50px;
+		position:absolute;
+		margin-left:-413px;
+		/*border:solid 2px #FF0000;*/
+		font-family:微软雅黑;
+		font-size:25px;
+		color:#000;
+		line-height:47px;
+		top:30px;
+		}
+	.cont-first li a{
+		text-decoration:none;	
+		color: #000;
+		}
+	.cont-first h3{
+		width:105px;
+		height:40px;
+		/*border: solid 2px #FF0000;*/
+		text-align:left;
+		font-size:25px;
+		line-height:38px;
+		border-bottom: solid 2px #666666;
+		}
+</style>
+</head>
+<body>
+		<div class="hea">   		
+            <div class="qhcomment">
+                <div class="navigation">
+                    <!--导航栏背景-->
+                    <div id="logo">
+                        <!--logo图标-->
+                        <a href="#"></a>
+                    </div>
+                    <ul class="nvalist">
+                        <li>
+                            <a href="../index.html">网站首页</a>
+                        </li>
+                        <li>
+                            <a href="../space flight/index.html">中国航天</a>
+                        </li>
+                        <li>
+                            <a href="../aviation/index.html">中国航空</a>
+                        </li>
+                        <li>
+                            <a href="../china sailing/index.html">中国航海</a>
+                        </li>
+                        <li>
+                            <a href="../about us/about.html">关于我们</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="search_box">
+                        <input type="text" placeholder="请输入搜索内容" />
+                        <span>
+                            <i class="iconfont icon-sousuo" style="color:#fff; font-size:18px;"></i>
+                        </span>
+                    </div>
+            	</div>
+          	</div>
+        </div>
+		<div class="header"></div>
+    <div class="content">
+    	<div class="cont_1">
+        	<ul class="cont-first">
+            	<li>你当前所在的页面：<a href="file:///D|/index.html">首页</a>><a href="../index.html#indexzghh">返回</a></li><br><br>
+            	<li><a href="#" style=" color:#000;"><h1>哥伦布发现美洲新大陆</h1></a></li><br>
+                <h3>人物生平</h3>
+              
+              <li><p style="font-size:20px; text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;克里斯托弗·哥伦布（Christopher Columbus）是意大利的著名航海家，是地理大发现的先驱者（参阅《征服天堂》（Conquest of Paradise，Vangelis范吉利斯）。1451年8月或10月生于意大利热那亚，1506年5月20日卒于西班牙巴利亚多利德。</p></li><br>
+              <li><img src="../image/哥伦布1.jpg" width="495" height="599"></li><br>
+              <li><p style="font-size:20px; text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哥伦布从没承认他当时到达了一个以前欧洲人所不知的大陆，而不是出发前的目标—东印度群岛。他将这个大陆上的居民叫做“印第安人（indias，西班牙语的印度人）”。</p></li><br>
+              <li><p style="font-size:20px; text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于哥伦布和西班牙王室和它所指派的美洲殖民地管理者之间的紧张关系，使得他在1500年被逮捕以及解除对伊斯帕尼奥拉岛居民点的总督职位。后来还导致了关于哥伦布和他的继承者对西班牙王室许诺给他们的利益的法律诉讼。</p></li><br>
+              <li><p style="font-size:20px; text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哥伦布自己认为他的成就主要在传播了基督的荣光。但是对于美洲原住民和一些人权人士而言，哥伦布的到来意味着对美洲原住民野蛮和残酷的大掠杀的开始。哥伦布在现今大多数地方被当做一种无畏探索未知世界的精神象征。</p></li><br>
+              <li><p style="font-size:20px; text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他在1492年到1502年间在西班牙国王的资助下四次横渡大西洋，到达美洲大陆，他也因此成为了名垂青史的航海家。但有证据显示，更早发现美洲大陆的有维京人莱夫·埃里克松（Leif Ericson）。</p></li><br>
+              <li><p style="font-size:20px; text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哥伦布是个意大利人，自幼热爱航海冒险。实际上1491年，就已经没人相信地球是个平面了，后来有人说他是为了证实“地圆说”才开始的航行，这种说法是错误的。一方面，地圆说的理论尚不十分完备，许多人不相信，把哥伦布看成江湖骗子。另一方面因为当时西方国家对东方物质财富需求除传统的丝绸、瓷器、茶叶外，还有亚洲的高利润的香料贸易。</p></li><br>
+               <li><img src="../image/哥伦布2.jpg" width="495" height="599"></li><br>
+              <li><p style="font-size:20px; text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哥伦布为了实现自己的计划，到处游说了十几年。直到1492年，西班牙女王伊莎贝拉（Queen Isabella）慧眼识英雄，她说服了国王斐迪南二世(KIng Ferdinand)，使哥伦布的计划才得以实施。因为西班牙王室看到了有可能在与对手的有关亚洲的高利润的香料贸易的竞争中取得先手的遥远但美好前景</p></li><br>
+              <li><p style="font-size:20px; text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;后来，一个叫阿美利哥·维斯普西（Americ Vespvck）的意大利学者，经过更多的考察，才知道哥伦布到达的这些地方不是印度，而是一个原来不为多数欧洲人知道的大陆。但是，在命名上这块大陆却用了证实它是欧洲人所未知大陆这种情况的人的名字命了名：阿美利加洲（America美洲）。</p></li><br>
+               
+              <li><p style="font-size:20px; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哥伦布并不是最早发现美洲大陆的人，“新大陆”狭义上对哥伦布和西方人是“新大陆”，对美洲原住民印第安人来说并不是新大陆，他们早在4万年前就已经到达美洲大陆，大约是在从亚洲渡过白令海峡到达美洲的，或者是通过冰封的海峡陆桥过去的。</p></li><br>
+   
+              <li><p style="font-size:20px; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不管是那个哥伦布还是其他西方人登上的美洲大陆，都不是“首先发现”，在他们来之前这里不仅有几千万的居民。美洲土著居民本身就是远古时期从亚洲迁徙过去的。中国、大洋洲的先民航海到达美洲也是极有可能的，但这些都不能改变哥伦布发现新大陆的重要意义。哥伦布的发现对世界却产生了当时人所料想不到的巨大影响，也成为了人类历史发展的重要转折点。</p></li><br>
+              <li><p style="font-size:20px; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新航路的开辟其实只是为了哥伦布想要的钱，他才不在乎什么历史的发展。哥伦布的发现成为美洲大陆开发和殖民的新开端，是历史上一个重大的转折点。</p></li><br>
+              <li><p style="font-size:20px; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从某种意义上来说，哥伦布可以说是黑人奴隶贸易的先祖，作为一个航海者，他固然伟大；但他同时也是一个万恶的殖民者，他在殖民美洲时所做的事是无法想象的。毕竟从一开始，这个伟大的航海家进行航海的主要原因就是黄金，这间接导致了三角贸易...</p></li>
+           </ul>
+       </div>
+    </div>
+		<div id="footer">
+			<div id="ft_bottom">
+				<div id="footer_add1">
+					<h4>联系我们</h4>
+					<ul>
+						<li>
+							<a>电话：010-123456789</a>
+						</li>
+						<li>
+							<a>传真：010-123456789</a>
+						</li>
+						<li>
+							<a>地址：梧州职业学院三龙大道88号</a>
+						</li>
+						<li>
+							<a>邮编：530700</a>
+						</li>
+						<li>
+							<a>邮箱：2526193201@qq.com</a>
+						</li>
+					</ul>
+				</div>
+				<div id="footer_add2">
+					<ul id="add2_ewm">
+						<li class="icon_tu icon-weixin">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qq">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qqkongjian">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-weibo">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-zhongwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-yingwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-shouji">
+							<a href="#"></a>
+						</li>
+					</ul>
+					<div id="add2_list">
+						<ul>
+								<li>
+								<a href="../index.html">中国启航</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../space flight/index.html">中国航天</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../china sailing/index.html">中国航海</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../aviation/index.html">中国航空</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../about us/about.html">关于我们</a>
+							</li>
+						</ul>
+						<p>版权所有《2019》实验室小组</p>
+					</div>
+
+				</div>
+				<div class="footer_add3">
+					<img src="../image/qq.jpg" />
+					<img src="../image/weix.jpg"/>
+				</div>
+			</div>
+		</div>
+			</div>
+        
+		</div>
+</body>
+</html>
+

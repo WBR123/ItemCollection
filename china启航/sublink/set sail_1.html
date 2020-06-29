@@ -1,0 +1,705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+    <title>天河二号超级计算机</title>
+    <style>
+	*{
+		margin:0px;
+		padding:0px;
+	}body,#footer{
+			min-width:1336px;
+			}
+/*导航栏样式 begin*/
+.hea{
+	 background-color: #1D5BAE;
+}
+.qhcomment {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100px;
+           
+        }
+.navigation{
+		position:absolute;
+		width:1000px;
+		height:0px;
+		background:rgba(0,0,0,0.1);		
+		z-index:100;
+		margin: 0 auto;
+	}
+	.navigation .nvalist{/*导航栏*/
+		width:990px;
+		height:47px;
+		/*border:1px solid green;*/
+		/*margin-left:450px;*/
+		margin-top:24px;
+	}
+	.navigation .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:60px;
+		padding:8px 8px;
+		border-radius:5px;
+        /*z-index:auto;*/
+	}
+	.navigation .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:30px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.navigation .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+
+    	.search_box{
+		position:absolute;
+		left: 900px;
+		top: 15px;
+		/*width:253px;*/
+		/*height:50px;*/
+		border-bottom:2px solid #fff;
+		border-radius:0 0 8px 8px;
+
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:300px;
+		height:50px;
+		text-indent:2em;
+		/*border:1px solid #fff;*/
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+	.iconfont{
+		font-size:12px;
+	}
+    #logo {
+    position: absolute;
+    top: 10px;
+    left: -250px;
+    width: 280px;
+    height: 84px;
+    /*border:1px solid red;*/
+    z-index: 9;
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    #logo a {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: #FC9;
+        text-decoration: none;
+        line-height: 67px;
+        font-family: "Comic Sans MS", cursive;
+    }
+/*导航栏样式 end*/
+	
+	
+	.search_box{
+		width:253px;
+		height:50px;
+		border-bottom:2px solid #fff;
+		border-radius:0 0 8px 8px;
+		position:absolute;
+		/*border:1px solid red;*/
+		margin-top:-26px;
+		top:50px;
+		right:110px;
+		position:absolute;
+		z-index:11;
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:460px;
+		height:50px;
+		text-indent:2em;
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+	.iconfont{
+		font-family: "iconfont" !important;
+		font-size: 16px;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color:#fff;
+	}
+	.switcher_icon{
+		display:block;
+		width:115px;
+		height:30px;
+		margin-top:50px;
+		right:-24px;
+		position:absolute;
+		margin-left:0px;
+		z-index:12;
+	}
+	.switcher_icon li{
+		list-style:none;
+		float:left;	
+	}
+	.switcher_icon li a {
+		display:block;
+		text-decoration:none;
+		color:#fff;
+		font-size:14px;
+		padding:4px 10px;
+		line-height:30px;
+	}
+	
+	
+	
+	
+	/*9.2天河计算机*/
+	.View_ck{
+		width:1903px;
+		height:50px;
+		/*border:1px solid red;*/
+		margin:auto;
+		position:relative;
+		top:20px;
+		line-height:50px;
+	}
+	.View_ck span{
+		margin-left:330px;
+		font-size:20px;
+		font-weight:bold;
+	}
+	.View_ck a:nth-child(2){
+		text-decoration:none;
+		font-size:16px;
+		color: #000;
+		font-weight:bold;
+		margin-left:15px;
+	}
+	.View_ck a:nth-child(3){
+		text-decoration:none;
+		font-size:18px;
+		color: #000;
+		margin-left:15px;
+		line-height:25px;
+	}
+	.Tianhe-theme{
+		margin-top:20px;
+		text-align:center;
+		font-size:30px;
+	}
+	.Data_c{
+		width:1000px;
+		height:3000px;
+		/*border:1px solid red;*/
+		margin:auto;
+	}
+	.Data_c p:nth-child(1){
+		display:block;
+		color:#000;
+		opacity:0.7;
+		font-size:16px;
+		margin-top:25px;
+		line-height:25px;
+	}
+	.Data_c p:nth-child(2){
+		display:block;
+		color:#000;
+		opacity:0.7;
+		font-size:16px;
+		margin-top:25px;
+		line-height:25px;
+	}
+	#TianHe_1{
+		display:block;
+		text-align:center;
+		width:400px;
+		height:300px;
+		/*border:1px solid green;*/
+		margin:70px auto;
+	}
+	.Data_c p:nth-child(4){
+		color: #000;
+		font-size: 24px;
+		margin-top: 25px;
+		font-weight: bold;
+	}
+	.Data_c p:nth-child(5){
+		color:#000;
+		font-size:16px;
+		opacity:0.7;
+		margin-top:15px;
+		line-height:25px;
+	}
+	.Data_c p:nth-child(6),.Data_c p:nth-child(7),.Data_c p:nth-child(8){
+		color:#000;
+		font-size:16px;
+		opacity:0.7;
+		margin-top:15px;
+		line-height:25px;
+	}
+	.Data_c p:nth-child(9),.Data_c p:nth-child(10){
+		color:#000;
+		font-size:16px;
+		opacity:0.7;
+		margin-top:15px;
+		line-height:25px;
+	}					
+	#TianHe_2{
+		display:block;
+		width:400px;
+		height:300px;
+		/*border:1px solid green;*/
+		margin:70px auto;
+		text-align:center;
+	}
+	.Characteristics{ /*主要特点*/
+		color: #000;
+		font-size: 24px;
+		margin-top: 25px;
+		font-weight: bold;
+	}
+	.Data_c p:nth-child(12),.Data_c p:nth-child(13){
+		color:#000;
+		font-size:16px;
+		opacity:0.7;
+		margin-top:15px;
+		line-height:25px;
+	}	
+	#field_l{
+		display:block;
+		color: #000;
+		font-size: 24px;
+		margin-top: 35px;
+		font-weight: bold;
+	}	
+	#The_study{/*研究licheng*/
+		display:block;
+		color: #000;
+		font-size: 24px;
+		margin-top: 25px;
+		font-weight: bold;
+	}
+	#Weinti{/*主要问题*/
+		display:block;
+		color: #000;
+		font-size: 24px;
+		margin-top: 25px;
+		font-weight: bold;
+	}
+	#World{/*世界纪录*/
+		display:block;
+		color: #000;
+		font-size: 24px;
+		margin-top: 25px;
+		font-weight: bold;
+	}
+	#TianHe_3{
+		display:block;
+		width:400px;
+		height:300px;
+		/*border:1px solid green;*/
+		margin:50px auto 10px;
+		text-align:center;
+	}
+	.Back_to_home{
+		margin:auto;
+		display:block;
+		width:400px;
+		height:60px;
+		text-align:center;
+		line-height:60px;
+		font-size:20px;
+		margin-top:50px;	
+		background:rgba(0,0,0,0.2);
+		font-family:'幼圆';
+		border-radius:5px;
+		color:#fff;
+		text-decoration:none;
+	}
+		
+	
+	/*9.2尾部*/
+	/*尾部CSS*/
+		#footer{
+			width:100%;
+			min-width: 800px;
+			height:300px;
+			background:rgba(0,0,0,0.5);
+			position:relative;
+			z-index:99;
+			margin:30px auto 0;  
+		}
+		#ft_bottom{
+			width:1000px;
+			height:300px;
+			/*border:1px solid #F00;*/
+			margin:auto;
+		}
+		#footer_add1{
+			width:295px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#FFF 1px solid;
+		}
+		#footer_add1 h4{
+			margin-left:2em;
+			margin-top:1em;
+			color:#CCC;
+		}
+		#footer_add1 ul{
+			list-style:none;
+		}
+		#footer_add1 li{
+			margin-top:1em;
+		}
+		#footer_add1 li a{
+			color:#CCC;
+		}
+		#footer_add2{
+			width:450px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#fff 1px solid;
+		}
+		
+		
+		#add2_list{
+			width:430px;
+			height:52px;
+			/*background:#063;*/
+			float:left;
+			/*margin-left:10px;*/
+			margin-top:20px;
+		}
+		#add2_list li{
+			float:left;
+			margin-left:0.2em;
+			line-height:50px;
+		}
+		#add2_list li a{
+			color:#CCC;
+			text-decoration:none;
+		}
+		#add2_list ul{
+			list-style:none;
+		}
+		#add2_list p{
+			float:left;
+			margin-top:20px;
+			color:#CCC;
+			margin-left:28%;
+		}
+		#add2_ewm{
+			width:538px;
+			height:50px;
+			
+			float:left;
+			
+			margin-top:65px;
+			display:flex;
+		}
+		#add2_ewm li{
+			
+			flex:0.1;
+			width:40px;
+			height:inherit;
+			/*border:1px solid #fff;*/
+			list-style-type:none;
+		}
+		.icon_tu {
+		  font-family: "iconfont" !important;
+		  font-size: 16px;
+		  font-style: normal;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  color:#fff;
+		  font-size:25px;
+		  text-align:center;
+		  line-height:50px;
+		  cursor:pointer;
+		}
+		
+		.footer_add3{
+    		float: left;
+    		width: 250px;
+    		margin-top: 40px;
+    	}
+		.footer_add3 img{
+			width: 100px;
+			height: 100px;
+			margin-top: 65px;
+			margin-left: 20px;
+		}
+		
+			.box_ewm{
+				width:400px;
+				height:150px;
+				/*border:1px solid green;*/
+				position:absolute;
+				z-index:999999;
+				right:48px;
+				top:85px;
+			}
+			.box_ewm li{
+				display:block;
+				list-style-type:none;
+				width:162px;
+				height:150px; 
+				/*border:1px solid green;*/
+				float:left;
+				margin-left:28px;
+			}
+    </style>
+    </head>
+    
+    <body>
+    	<div class="hea">   		
+    	<div class="qhcomment">
+            <div class="navigation">
+                <!--导航栏背景-->
+                <div id="logo">
+                    <!--logo图标-->
+                    <a href="#"></a>
+                </div>
+                <ul class="nvalist">
+                    <li>
+                            <a href="../index.html">网站首页</a>
+                        </li>
+                        <li>
+                            <a href="../space flight/index.html">中国航天</a>
+                        </li>
+                        <li>
+                            <a href="../aviation/index.html">中国航空</a>
+                        </li>
+                        <li>
+                            <a href="../china sailing/index.html">中国航海</a>
+                        </li>
+                        <li>
+                            <a href="../about us/about.html">关于我们</a>
+                        </li>
+                </ul>
+                <div class="search_box">
+                    <input type="text" placeholder="请输入搜索内容" />
+                    <!--<input type="submit" value="" />-->
+                    <span>
+                        <i class="iconfont icon-sousuo" style="color:#fff; font-size:18px;"></i>
+                    </span>
+                </div>
+            </div>
+          </div>
+        </div>
+         <!--nva结束-->
+        <div  class="View_ck">
+        	 <span>您所在位置：> </span>
+        	<a href="#">详情查看</a>
+            <a href="../index.html#indexkj">>&nbsp;&nbsp;返回 </a>
+        </div>
+        <h3 class="Tianhe-theme">天河二号超级计算机</h3>
+       <div class="Data_c">
+       		<p>&nbsp;&nbsp;&nbsp;&nbsp;“天河二号”是由国防科学技术大学研制的超级计算机系统，以峰值计算速度每秒5.49亿亿次、持续计算速度每秒3.39亿亿次双精度浮点运算的优异性能位居榜首，成为2013年全球最快超级计算机。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014年11月17日公布的全球超级计算机500强榜单中，中国“天河二号”以比第二名美国“泰坦”快近一倍的速度连续第四次获得冠军。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015年5月，“天河二号”上成功进行了3万亿粒子数中微子和暗物质的宇宙学N体数值模拟，揭示了宇宙大爆炸1600万年之后至今约137亿年的漫长演化进程。同时这是迄今为止世界上粒子数最多的N体数值模拟；11月16日，全球超级计算机500强榜单在美国公布，“天河二号”超级计算机以每秒33．86千万亿次连续第六度称雄。 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016年6月20日，新一期全球超级计算机500强榜单公布，使用中国自主芯片制造的“神威·太湖之光”取代“天河二号”登上榜首。2018年11月12日，新一期全球超级计算机500强榜单在美国达拉斯发布，中国超算“天河二号”位列第四名。</p>
+            <span id="TianHe_1">
+            	<img src="../image/tianhe1.PNG" width="450" height="300" alt="天河二号1">
+            </span>
+            <p>组成结构</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天河2号由16000个节点组成，每个节点有2颗基于Ivy Bridge-E Xeon E5 2692处理器和3个Xeon Phi,累计共有32000颗Ivy Bridge处理器和48000个Xeon Phi,总计有312万个计算核心。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每个Xeon Phi使用其中的57个核心，而不是使用全部的61个，因为使用61个在运算周期协调方面会有问题，而使用57个核心能够加速4个执行线程，并且在每个线程单周期可以达成4Gflops的运算量，运行在1.1GHz的Xeon Phi可以生产1.003 Tflops的双精度运算能力。如果考虑CPU,2 Ivy Bridge * 0.2112 Tflop/s + 3 Xeon Phi * 1.003 Tflop/s=3.431 Tflops,2个Ivy Bridge+9个Xeon Phi单个节点可以有3.431 Tflops运算能力，16000个节点总计可达54.9PFlops性能。每个运算节点有256GB主存、而每个Xeon Phi板载8GB内存，因此每个节点共有88GB内存，总计16000个节点一共有1.404 PB内存，而外部存储器容量方面更是高达12.4PB.
+			</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在每个主板上有2个计算节点，而每个框架则有16个主板，4个框架组成一个机柜，整个系统由125个机柜组成。每个计算节点主板分为两块，一块CPU一块APU,CPU上有4核Ivy Bridge、内存和一个Xeon Phi协处理器,而APU基板上则承载着5个Xeon Phi协处理器.CPU和APU之间有5个水平插入的链接口，由Ivy Bridge内置的PCI-E 2.0进行连接，虽然Ivy Bridge内置为PCI Express 3.0接口，但Xeon Phi仅支持2.0,单个通路为10Gbps带宽。
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计算节点的前端处理器为4096个FT-1500处理器， FT-1500处理器是由国防科技大学为天河1研发，其可以说是天河1项目的最大收获，其为16核心的Sparc V9架构处理器，在40nm工艺情况下运行频率为1.8Ghz,峰值性能为144 Gflops/s,功耗为65W,但相比英特尔22nm 12核 2.2GHz 211Gflops/s性能的Ivy Bridge还是有明显差距</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天河2互联方面采用自主研发的 Express-2 内部互联网络，其为有13个交换机，而每个交换机有576个端口。连接介质为光电混合。具体控制器是名为NRC的ASIC专用目的集成电路，其采用90nm工艺，封装尺寸为17.16x17.16 mm,共有2577引脚。单个NRC的吞吐能力为2.56Tbps.而在终端方面网络接口也采用类似结构的NIC,但规模稍小，为10.76x10.76 mm, 675 pin,其采用PCIE 2.0方式连接，传输速率为6.36GB/s.并且在在12000节点的情况下延迟也很低，仅为85us.</p>
+            <span id="TianHe_2">
+            	<img src="../image/tianhe2.PNG" width="400" height="300" alt="天河二号2">
+            </span>
+            <span class="Characteristics">主要特点</span>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天河二号是当今世界上运算速度第二快的超级计算机，综合技术处于国际领先水平。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;它有五大特点：一是高性能，峰值速度和持续速度都创造了新的世界纪录；二是低能耗，能效比为每瓦特19亿次，达到了世界先进水平；三是应用广，主打科学工程计算，兼顾了云计算；四是易使用，创新发展了异构融合体系结构，提高了软件兼容性和易编程性；五是性价比高。</p>
+            
+            <span id="field_l">应用领域</span>
+            <p style="opacity:0.7; font-size:16px; color:#000; line-height:25px; margin-top:15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天河二号已应用于生物医药、新材料、工程设计与仿真分析、天气预报、智慧城市、电子商务、云计算与大数据、数字媒体和动漫设计等多个领域，还将广泛应用于大科学、大工程、信息化等领域，为经济社会转型升级提供重要支撑。</p>
+            <p style="opacity:0.7; font-size:16px; color:#000; line-height:25px; margin-top:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天河二号逐步在生命科学、材料科学、大气科学、地球物理、宇宙、经济学，以及大型基因组组装、基因测序、污染治理等一系列事关国计民生的大科学、大工程中“大显身手”。此外，国家超算广州中心积极推动国际交流与合作，利用天河二号为国外研究机构提供高性能计算服务。</p>
+            <P style="opacity:0.7; font-size:16px; color:#000; line-height:25px; margin-top:20px;">据悉，科技部近年不断加大对超算应用软件研发的投入。“十二五”以来的相关研发投入已超过2亿元。预计“十三五”期间投入将进一步加大。</p>
+            
+            <span id="The_study">研究历程</span>
+            <p style="opacity:0.7; font-size:16px; color:#000; line-height:25px; margin-top:15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前，天河二号超级计算机在国家超算广州中心已正式投入运行，为120多家用户提供了300多项典型应用计算。同时，为用户培训了一批超算应用技术人才。</p>
+            <p style="opacity:0.7; font-size:16px; color:#000; line-height:25px; margin-top:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015年5月，由北京师范大学、国防科技大学、加拿大理论天体物理研究所、北京大学、中科院高能物理研究所联合组成的宇宙中微子数值模拟团队，经过一系列技术攻关，在“天河二号”上成功进行了3万亿粒子数中微子和暗物质的宇宙学数值模拟，揭示了宇宙大爆炸1600万年之后至今约137亿年的漫长演化进程。</p>
+             <span id="TianHe_3">
+            	<img src="../image/tianhe3.PNG" width="400" height="300" alt="天河二号3">
+            </span>
+            <span id="Weinti">存在问题</span>
+            <p style="opacity:0.7; font-size:16px; color:#000; line-height:25px; margin-top:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;速度第一效率落后，高性能处理器缺少。
+</p>
+            
+            <span id="World">世界纪录</span>
+            <p style="opacity:0.7; font-size:16px; color:#000; line-height:25px; margin-top:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;世界上速度最快的超级计算机：由中国国防科技大学研制的超级计算机“天河2号”是世界上速度最快的计算机，在Linpack基准上的运算速度为每秒33.86千万亿次。（吉尼斯世界纪录）</p>
+           
+            <a href="../index.html#indexkj" class="Back_to_home">返回</a>
+       </div>
+        <!--尾部-->
+        <div id="footer">
+			<div id="ft_bottom">
+				<div id="footer_add1">
+					<h4>联系我们</h4>
+					<ul>
+						<li>
+							<a>电话：010-123456789</a>
+						</li>
+						<li>
+							<a>传真：010-123456789</a>
+						</li>
+						<li>
+							<a>地址：梧州职业学院三龙大道88号</a>
+						</li>
+						<li>
+							<a>邮编：530700</a>
+						</li>
+						<li>
+							<a>邮箱：2526193201@qq.com</a>
+						</li>
+					</ul>
+				</div>
+				<div id="footer_add2">
+					<ul id="add2_ewm">
+						<li class="icon_tu icon-weixin">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qq">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qqkongjian">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-weibo">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-zhongwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-yingwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-shouji">
+							<a href="#"></a>
+						</li>
+					</ul>
+					<div id="add2_list">
+						<ul>
+							<li>
+								<a href="../index.html">中国启航</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../space flight/index.html">中国航天</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../china sailing/index.html">中国航海</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../aviation/index.html">中国航空</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../about us/about.html">关于我们</a>
+							</li>
+						</ul>
+						<p>版权所有《2019》实验室小组</p>
+					</div>
+
+				</div>
+				<div class="footer_add3">
+					<img src="../image/weix.jpg"/>
+					<img src="../image/qq.jpg"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

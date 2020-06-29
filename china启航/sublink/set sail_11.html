@@ -1,0 +1,679 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+    <title>航天器</title>
+    <style>
+    	*{
+			margin:0px;
+			padding:0px;
+	}
+	  body,#footer{
+			min-width:1336px;
+			}     
+        /*导航栏样式 begin*/
+.hea{
+	 background-color: #1D5BAE;
+}
+.qhcomment {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100px;
+           
+        }
+.navigation{
+		position:absolute;
+		width:1000px;
+		height:0px;
+		background:rgba(0,0,0,0.1);		
+		z-index:100;
+		margin: 0 auto;
+	}
+	.navigation .nvalist{/*导航栏*/
+		width:990px;
+		height:47px;
+		/*border:1px solid green;*/
+		/*margin-left:450px;*/
+		margin-top:24px;
+	}
+	.navigation .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:60px;
+		padding:8px 8px;
+		border-radius:5px;
+        /*z-index:auto;*/
+	}
+	.navigation .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:30px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.navigation .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+
+    	.search_box{
+		position:absolute;
+		left: 900px;
+		top: 15px;
+		/*width:253px;*/
+		/*height:50px;*/
+		border-bottom:2px solid #fff;
+		border-radius:0 0 8px 8px;
+
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:300px;
+		height:50px;
+		text-indent:2em;
+		/*border:1px solid #fff;*/
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+		.iconfont{
+			font-size:12px;
+		}
+		#logo {
+		position: absolute;
+		top: 10px;
+		left: -250px;
+		width: 280px;
+		height: 84px;
+		/*border:1px solid red;*/
+		z-index: 9;
+		background-image: url(../image/logo.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    #logo a {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: #FC9;
+        text-decoration: none;
+        line-height: 67px;
+        font-family: "Comic Sans MS", cursive;
+    }
+/*导航栏样式 end*/
+	.nva_top_list{
+		width:1920px;
+		height:112px;
+		/*border:1px solid red;*/
+		position:relative;
+		top:0px;
+		background:rgba(0,0,0,.8);
+		/*background:#09F;*/
+		margin:auto;
+	}
+	.nva_top_list .nvalist{/*导航栏*/
+		width:990px;
+		height:87px;
+		/*border:1px solid green;*/
+		position:absolute;
+		top:17px;
+		left:50%;
+		margin-left:-490px;
+	}
+	.nva_top_list .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:50px;
+		padding:8px 8px;
+		border-radius:5px;
+		margin-top:30px;
+	}
+	.nva_top_list .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:40px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.nva_top_list .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+	
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:200px;
+		height:50px;
+		text-indent:2em;
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+	.iconfont{
+		font-family: "iconfont" !important;
+		font-size: 16px;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color:#fff;
+	}
+	.switcher_icon{
+		display:block;
+		width:115px;
+		height:30px;
+		margin-top:50px;
+		right:0px;
+		position:absolute;
+		margin-left:0px;
+		z-index:12;
+	}
+	.switcher_icon li{
+		list-style:none;
+		float:left;	
+	}
+	.switcher_icon li a {
+		display:block;
+		text-decoration:none;
+		color:#fff;
+		font-size:14px;
+		padding:4px 10px;
+		line-height:30px;
+	}
+	.Technology_bg{
+		width:1300px;
+		height:100px;
+		/*border:1px solid red;*/
+		margin:auto;
+		position:relative;
+		top:25px;
+		z-index:1;
+	}
+	.Technology_bg span:nth-child(1){
+		display:block;
+		width:inherit;
+		height:40px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:0px;
+		font-weight:bold;
+		line-height:40px;
+		font-size:18px;
+		z-index:2;
+	}
+	.Technology_bg span:nth-child(2){
+		display:block;
+		width:90px;
+		height:30px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:6px;
+		margin-left:133px;
+		line-height:30px;
+		font-size:16px;
+		color:#000;
+		font-weight:bold;
+	}
+	.Technology_bg  a{
+		margin-left:222px;
+		text-decoration:none;
+		color:#000;
+		font-size:18px;
+		line-height:45px;
+		font-weight:bold;
+		position:absolute;
+		z-index:555;		
+	}
+	#kj_tit{/*<span></span>*/
+		display:block;
+		width:1300px;
+		height:50px;
+		text-align:center;
+		/*border:1px solid red;*/
+		font-size:35px;
+		font-weight:bold;
+		font-size:30px;
+	}
+	.Aviation_technology{
+		width:1300px;
+		height:3027px;
+		/*border:1px solid pink;*/
+		margin: 0px auto;
+	}
+	#footer{
+			width:100%;
+			min-width: 800px;
+			height:300px;
+			background:rgba(0,0,0,0.5);
+			position:relative;
+			z-index:99;
+			margin:730px auto 0px;
+		}
+		#ft_bottom{
+			width:1000px;
+			height:300px;
+			/*border:1px solid #F00;*/
+			margin:auto;
+		}
+		#footer_add1{
+			width:295px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#FFF 1px solid;
+		}
+		#footer_add1 h4{
+			margin-left:2em;
+			margin-top:1em;
+			color:#CCC;
+		}
+		#footer_add1 ul{
+			list-style:none;
+		}
+		#footer_add1 li{
+			margin-top:1em;
+		}
+		#footer_add1 li a{
+			color:#CCC;
+		}
+		#footer_add2{
+			width:450px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#fff 1px solid;
+		}
+		
+		
+		#add2_list{
+			width:430px;
+			height:52px;
+			/*background:#063;*/
+			float:left;
+			/*margin-left:10px;*/
+			margin-top:20px;
+		}
+		#add2_list li{
+			float:left;
+			margin-left:0.2em;
+			line-height:50px;
+		}
+		#add2_list li a{
+			color:#CCC;
+			text-decoration:none;
+		}
+		#add2_list ul{
+			list-style:none;
+		}
+		#add2_list p{
+			float:left;
+			margin-top:20px;
+			color:#CCC;
+			margin-left:28%;
+		}
+		#add2_ewm{
+			width:538px;
+			height:50px;
+			
+			float:left;
+			
+			margin-top:65px;
+			display:flex;
+		}
+		#add2_ewm li{
+			
+			flex:0.1;
+			width:40px;
+			height:inherit;
+			/*border:1px solid #fff;*/
+			list-style-type:none;
+		}
+		.icon_tu {
+		  font-family: "iconfont" !important;
+		  font-size: 16px;
+		  font-style: normal;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  color:#fff;
+		  font-size:25px;
+		  text-align:center;
+		  line-height:50px;
+		  cursor:pointer;
+		}
+		
+		.footer_add3{
+    		float: left;
+    		width: 250px;
+    		margin-top: 40px;
+    	}
+		.footer_add3 img{
+			width: 100px;
+			height: 100px;
+			margin-top: 65px;
+			margin-left: 20px;
+		}
+		
+			.box_ewm{
+				width:400px;
+				height:150px;
+				/*border:1px solid green;*/
+				position:absolute;
+				z-index:999999;
+				right:48px;
+				top:85px;
+			}
+			.box_ewm li{
+				display:block;
+				list-style-type:none;
+				width:162px;
+				height:150px; 
+				/*border:1px solid green;*/
+				float:left;
+				margin-left:28px;
+			}
+			.tg_bg{
+				width:1920px;
+				height:500px;
+				/*border: 1px solid red;*/
+				margin:auto;
+			}
+    </style>
+    </head>
+    
+    <body>
+    	<div class="hea">   		
+            <div class="qhcomment">
+                <div class="navigation">
+                    <!--导航栏背景-->
+                    <div id="logo">
+                        <!--logo图标-->
+                        <a href="#"></a>
+                    </div>
+                    <ul class="nvalist">
+                        <li>
+                            <a href="../index.html">网站首页</a>
+                        </li>
+                        <li>
+                            <a href="../space flight/index.html">中国航天</a>
+                        </li>
+                        <li>
+                            <a href="../aviation/index.html">中国航空</a>
+                        </li>
+                        <li>
+                            <a href="../china sailing/index.html">中国航海</a>
+                        </li>
+                        <li>
+                            <a href="../about us/about.html">关于我们</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="search_box">
+                        <input type="text" placeholder="请输入搜索内容" />
+                        <!--<input type="submit" value="" />-->
+                        <span>
+                            <i class="iconfont icon-sousuo" style="color:#fff; font-size:18px;"></i>
+                        </span>
+                    </div>
+            	</div>
+          	</div>
+        </div>
+        <!--9.3-->
+        <div class="tg_bg"><img src="../image/tg_1.jpg" width="1920" height="500"></div>
+        <div class="Technology_bg">
+        	<span>您所在位置：></span>
+        	<span>航天器&nbsp;&nbsp;&nbsp;></span>
+            <a href="../index.html#indexht">返回</a>     
+        </div>
+        <div class="Aviation_technology">
+        	<span id="kj_tit">中国航天器</span>
+        	<p style="opacity:0.7; margin-top:20px; line-height:25px;">长征一号运载火箭：</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长征一号是为发射我国第一颗人造地球卫星东方红一号而研制的三级运载火箭。</p>
+            <p style="opacity:0.7; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1967年11月，决定由中国运载火箭技术研究院负责研制。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1968年初，完成了火箭的总体设计，之后又用了两年左右的时间完成了各种大型的地面试验。
+1970年4月24日，长征一号火箭首次发射，将中国第一颗人造地球卫星东方红一号顺利送入轨道，发射获得圆满成功。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此火箭共进行了两次发射，均获得成功。</p>
+			<span style="display:block; width:600px; height:300px; margin:10px auto 20px;">
+            	<img src="../image/czxl_1.jpg" width="600" height="300" alt="czxl_1">
+            </span>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 长征一号丁运载火箭的近地轨道运载能力为1000千克。全箭起飞质量85.42吨，全长31.28米，卫星整流罩最大直径2.05米。 </p>
+            <p style="opacity:0.7; margin-top:10px; line-height:36px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全箭由箭体结构、动力系统、控制系统、遥测系统、外测安全系统、分离系统以及辅助系统等组成。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1997年11月，长征一号丁火箭首次飞行完全成功。 </p> 
+            
+			<p style="opacity:0.7; margin-top:20px; line-height:25px;">长征二号运载火箭：</p>       
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 长征二号(LM-2或CZ-2)是我国研制的一种两级运载火箭。火箭全长31.17米，芯级最大直径3.35米，运载能力在近地轨道时为1800千克。</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据发射卫星的需要，长征二号(LM-2或CZ-2)陆续衍生出长征二号丙(LM-2C或CZ-2C)、长征二号丙改进型(LM-2C/SD或CZ-2G)和发射极轨卫星的长征二号丁(LM-2D或CZ-2D)运载火箭。</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其后又研制了长征二号E(又称长二捆，LM-E或CZ-2E)运载火箭，用于发射一般商业卫星。 </p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为满足发射神舟号飞船的要求，保证宇航员的安全,我国又在长征二号E的基础上改进了可靠性并增设了故障检测系统和逃逸救生系统，从而发展出了长征二号F(LM-F或CZ-2F)运载火箭，专门用来发射神舟号载人飞船。</p>
+            <span style="display:block; width:600px; height:300px; margin:10px auto 20px;">
+            	<img src="../image/czxl_2.jpg" width="600" height="300" alt="hangkong_1">
+            </span>
+            
+            <p style="opacity:0.7; margin-top:20px; line-height:25px;">长征三号运载火箭：</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 长征三号是以“长征二号丙”为原型加氢氧第三级组成的三级运载火箭。</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国运载火箭技术研究院负责总设计和研制第三级，第一、第二级由上海航天局承制，全箭总长44.56m，起飞质量202t，起飞推力2.8×106N，第三级氢氧发动机在高空失重条件下二次启动，其同步转移轨道推力为1.4×104N。  </p>
+             <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1984年1月29日首次发射，由于第三级发动机二次启动不正常，卫星进入近地轨道运行。经过70个昼夜的奋斗，4月8日再发射，获得圆满成功。 </p>
+             <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1990年4月7日，“长征三号”为香港卫星通信有限公司成功地发射了亚洲一号通信卫星，标志着中国的长征系列运载火箭开始步入国际卫星发射服务市场。</p>
+             <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长征三号甲：我国同步轨道运载火箭的基本型。拥有灵活先进的控制系统，可以在星箭分离前对有效载荷进行大姿态调姿定向，并提供可调整的卫星起旋速率。1994年11月和1997年5月两次成功发射了东方红三号卫星。</p>
+             <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长征三号乙：中国近十年在国际发射服务市场上的主推火箭，以长三甲作为芯级，在其一级上捆绑了长二捆的四个助推器，并采用了加长、加强的二级贮箱，其GTO运载能力一跃达到5000千克。1997年8月和10月成功地发射了菲律宾马部海卫星和亚太二号R卫星。</p>
+             <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长征三号丙：长三丙是一枚三级大型液体捆绑式运载火箭。它以适应性更改后的长征三号甲运载火箭作为芯级，捆绑两枚液体燃料助推器而构成，它的推出为用户根据有效载荷的质量和任务要求而灵活选用长征火箭拓宽了范围。</p>
+            <span style="display:block; width:600px; height:300px; margin:10px auto 20px;">
+            	<img src="../image/czxl_3.PNG" width="600" height="300" alt="czxl_2">
+            </span>
+            
+            <p style="opacity:0.7; margin-top:20px; line-height:25px;">长征四号运载火箭：</p>
+            <p style="opacity:0.7; margin-top:10px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长征四号运载火箭于1979年由上海航天局开始研制，前后历时十年。</p> 
+             <p style="opacity:0.7; margin-top:15px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;它是在风暴一号火箭的基础上研制的，火箭全长41.901米，芯级最大直径3.35米，运载能力为太阳同步轨道时1500千克。 </p>
+             <p style="opacity:0.7; margin-top:15px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主要任务是发射太阳同步轨道卫星，和各种对地观测应用卫星系列。该火箭主要特点有：增加了常规的三子级；全部采用常温推进剂；一子级的发动机推力增大了，并加长了其贮箱；三子级发动机采用双向摇摆式控制等。 </p>
+             <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1988年9月7日，长征四号甲运载火箭在太原卫星发射中心首次发射并成功地将中国第一颗试验型气象卫星送入901公里高度的太阳同步轨道，随后又将第二颗风云一号气象卫星发射进入轨。</p>
+             
+             <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风暴一号:1975年7月26号，风暴一号成功的将一颗自重为1107公斤的我国新型技术试验卫星‘长空一号’送入预定轨道，这也是新中国航天部门第一次将一颗大于1000公斤的卫星发射上天的成功纪录。</p>
+             <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长征四号乙:长四乙是我国在长征四号甲基础上研制的一种运载能力更大的三级液体运载火箭。火箭全长45.576米，芯级最大直径3.35米。主要用于发射太阳同步轨道的对地观察应用卫星，1999年5月10日首次发射。</p>
+             <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长征四号丙:长四丙是中国航天科技集团公司研究制造的一个航天火箭型号。其基础为长征四号乙运载火箭，而长四丙的第三级发动机采用了二次启动技术，大幅提高火箭的运载能力。主要用于发射太阳同步轨道卫星。</p>
+   			<span style="display:block; width:600px; height:300px; margin:10px auto 20px;">
+            	<img src="../image/szwh.jpg" width="600" height="300" alt="czxl_3">
+                
+            </span>
+            <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:10px; display:block; opacity:0.7; text-align:center;">神舟一号：</span>
+            <p style="opacity:0.7; margin-top:20px; line-height:25px; text-align:center;">
+                发射时间：1999年11月20日6时30分7秒<br>
+                发射地点：酒泉卫星发射中心<br>
+                着陆地点：内蒙古自治区中部地区<br>
+                飞行时间/圈数：21小时11分/14圈
+             </p>
+             <p style="opacity:0.7; margin-top:20px; line-height:25px; font-size:20px; font-weight:bold;">技术：</p>
+             <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首次采用了在技术厂房对飞船、火箭联合体垂直总装与测试，整体垂直运输至发射场，进行远距离测试发射控制的新模式。我国在原有的航天测控网基础上新建的符合国际标准体制的陆海基航天测控网，也在这次发射试验中首次投入使用。飞船在轨运行期间，地面测控系统和分布于公海的4艘“远望号”测量船对其进行了跟踪与测控，成功进行了一系列科学试验。</p>
+             <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:10px; display:block; opacity:0.7; text-align:center;">神舟二号：</span>
+            <p style="opacity:0.7; margin-top:20px; line-height:25px; text-align:center;">               
+                发射时间：2001年1月10日1时0分3秒<br>
+                发射地点：酒泉卫星发射中心<br>
+                着陆地点：内蒙古自治区中部地区<br>
+                飞行时间/圈数：6天零18小时/108圈
+             </p>
+             <p style="opacity:0.7; margin-top:20px; line-height:25px; font-size:20px; font-weight:bold;">测试项目：</p>
+             <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我国第一艘正样无人飞船。飞船由轨道舱、返回舱和推进舱三个舱段组成。与“神舟”一号试验飞船相比，“神舟”二号飞船的系统结构有了新的扩展，技术性能有了新的提高，飞船技术状态与载人飞船基本一致。据介绍，我国首次在飞船上进行了微重力环境下空间生命科学、空间材料、空间天文和物理等领域的实验。</p>
+             
+        	<span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:10px; display:block; opacity:0.7; text-align:center;">神舟五号：</span>
+            <p style="opacity:0.7; margin-top:20px; line-height:25px; text-align:center;">                            
+                发射时间：2003年10月15日9时整<br>
+                发射地点：酒泉卫星发射中心<br>
+                着陆地点：内蒙古中部阿木古朗草原地区<br>
+                飞行时间/圈数：21小时/14圈
+             </p>
+             <p style="opacity:0.7; margin-top:20px; line-height:25px; font-size:20px; font-weight:bold;">搭载物品：</p>
+             <p style="opacity:0.7; margin-top:10px; line-height:25px; font-size:14px; font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;除了中国飞天第一人杨利伟外，“神舟”五号载人飞船返回舱内还搭载有一面具有特殊意义的中国国旗、一面北京2008年奥运会会徽旗、一面联合国国旗、人民币主币票样、中国首次载人航天飞行纪念邮票、中国载人航天工程纪念封和来自祖国宝岛台湾的农作物种子等。</p>
+        </div>
+        
+      
+        <!--尾部-->
+        
+<div id="footer">
+			<div id="ft_bottom">
+				<div id="footer_add1">
+					<h4>联系我们</h4>
+					<ul>
+						<li>
+							<a>电话：010-123456789</a>
+						</li>
+						<li>
+							<a>传真：010-123456789</a>
+						</li>
+						<li>
+							<a>地址：梧州职业学院三龙大道88号</a>
+						</li>
+						<li>
+							<a>邮编：530700</a>
+						</li>
+						<li>
+							<a>邮箱：2526193201@qq.com</a>
+						</li>
+					</ul>
+				</div>
+				<div id="footer_add2">
+					<ul id="add2_ewm">
+						<li class="icon_tu icon-weixin">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qq">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qqkongjian">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-weibo">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-zhongwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-yingwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-shouji">
+							<a href="#"></a>
+						</li>
+					</ul>
+					<div id="add2_list">
+						<ul>
+							<li>
+								<a href="../index.html">中国启航</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../space flight/index.html">中国航天</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../china sailing/index.html">中国航海</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../aviation/index.html">中国航空</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../about us/about.html">关于我们</a>
+							</li>
+						</ul>
+						<p>版权所有《2019》实验室小组</p>
+					</div>
+
+				</div>
+				<div class="footer_add3">
+					<img src="../image/weix.jpg"/>
+					<img src='../image/qq.jpg'/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,326 @@
+@charset "utf-8";
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	#logo{
+			position:absolute;
+			top:26px;
+			left:70px;
+			width:280px;
+			height:84px;
+			/*border:1px solid red;*/
+			z-index:9;
+			background-image:url(../image/logo.png);
+			background-repeat:no-repeat;
+			background-size:cover;	
+		}
+		 #logo a{
+			display:block;
+			text-align:center;
+			font-size:2em;
+			color: #FC9;
+			text-decoration:none;
+			line-height:67px;
+			font-family:"Comic Sans MS", cursive;
+		}
+		.nva_top_list{
+			width:1920px;
+			height:112px;
+			/*border:1px solid red;*/
+			position:relative;
+			top:-24px;
+			background:rgba(0,0,0,.8);
+			margin:auto;
+			/*background:#09F;*/
+		}
+		.nva_top_list .nvalist{/*导航栏*/
+			width:990px;
+			height:87px;
+			/*border:1px solid green;*/
+			position:absolute;
+			top:17px;
+			left:50%;
+			margin-left:-490px;
+		}
+		.nva_top_list .nvalist li{
+			display:blck;
+			width:90px;
+			height:30px;
+			/*border:1px solid red;*/
+			list-style:none;
+			float:left;
+			margin-left:60px;
+			padding:8px 8px;
+			border-radius:5px;
+			margin-top:30px;
+		}
+		.nva_top_list .nvalist li a{
+			display:inline-block;
+			position:absolute;
+			top:28px;
+			width:127px;
+			height:42px;
+			padding:4px;
+			margin-left:-23px;
+			line-height:40px;
+			/*border:1px solid red;*/
+			text-align:center;
+			text-decoration:none;
+			font-size:20px;
+			color:#FFF;
+			font-weight:600;
+			border-radius:5px;
+			font-family:"Comic Sans MS", cursive;
+		}
+		.nva_top_list .nvalist li:hover{
+			border-radius:5px;		
+			border-bottom:2.5px solid #F60;
+		}
+		.search_box{
+			width:253px;
+			height:50px;
+			border-bottom:2px solid #fff;
+			border-radius:0 0 8px 8px;
+			position:absolute;
+			/*border:1px solid red;*/
+			margin-top:-26px;
+			top:68px;
+			right:110px;
+			position:absolute;
+			z-index:11;
+		}
+		.search_box span{
+			display:inline-block;
+			position:absolute;
+			right:5px;
+			top:50%;
+			margin-top:-6px;
+			width:29px;
+			height:28px;
+			cursor:pointer;
+			/*background:#fff;*/
+		}
+		.search_box input[type=text]{
+			display:inline-block;
+			width:460px;
+			height:50px;
+			text-indent:2em;
+			top:0px;
+			background:none;
+			border:none;
+			color:#fff;
+		}
+		.search_box input[type=submit]{
+			display:inline-block;
+			position:absolute;
+			width:71px;
+			height:52px;
+			top:0px;
+			border:none;
+			right:0px;		
+			color:#fff;
+			font-family:'微软雅黑';
+			font-weight:bold;
+			font-size:1.8em;
+			background:none;
+		}
+		.iconfont{
+			font-family: "iconfont" !important;
+			font-size: 16px;
+			font-style: normal;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			color:#fff;
+		}
+		.switcher_icon{
+			display:block;
+			width:115px;
+			height:30px;
+			margin-top:30px;
+			right:-24px;
+			position:absolute;
+			margin-left:0px;
+			z-index:12;
+		}
+		.switcher_icon li{
+			list-style:none;
+			float:left;	
+		}
+		.switcher_icon li a {
+			display:block;
+			text-decoration:none;
+			color:#fff;
+			font-size:14px;
+			padding:4px 10px;
+			line-height:30px;
+		}
+		.all-main{
+			width:1310px;
+			height:100%;
+			max-height:1080px;
+			background:#FFF;
+			margin:auto;
+		}
+		#footer{
+			width:1920px;
+			height:300px;
+			background:rgba(0,0,0,0.5);
+			position:relative;
+			z-index:99;
+			top:1205px;
+			position:relative;
+			margin:auto;
+		}
+		#footer_add1{
+			width:300px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#FFF 1px solid;
+		}
+		#footer_add1 h4{
+			margin-left:2em;
+			margin-top:1em;
+			color:#FFF;
+		}
+		#footer_add1 ul{
+			list-style:none;
+		}
+		#footer_add1 li{
+			margin-top:1em;
+		}
+		#footer_add1 li a{
+			color:#FFF;
+		}
+		#footer_add2{
+			width:620px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#fff 1px solid;
+		}
+		#ft_bottom{
+			width:58em;
+			height:300px;
+			/*border:1px solid #F00;*/
+			margin:auto;
+		}	
+		#add2_list{
+			width:600px;
+			height:52px;
+			/*background:#063;*/
+			float:left;
+			margin-left:10px;
+			margin-top:20px;
+		}
+		#add2_list li{
+			float:left;
+			margin-left:1.1em;
+			line-height:50px;
+		}
+		#add2_list li a{
+			color:#CCC;
+			text-decoration:none;
+		}
+		#add2_list ul{
+			list-style:none;
+		}
+		#add2_list p{
+			float:left;
+			margin-top:20px;
+			color:#CCC;
+			margin-left:28%;
+		}
+		#add2_ewm{
+			width:480px;
+			height:50px;
+			/*background:#063;*/
+			float:left;
+			margin-left:32px;
+			margin-top:65px;
+			display:flex;
+		}
+		#add2_ewm li{
+			flex:1;
+			width:50px;
+			height:inherit;
+			/*border:1px solid #fff;*/
+			list-style-type:none;
+		}
+		.icon_tu {
+			font-family: "iconfont" !important;
+			font-size: 16px;
+			font-style: normal;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			 color:#fff;
+			 font-size:25px;
+			 text-align:center;
+			 line-height:50px;
+			 cursor:pointer;
+		}
+		.box_ewm{
+			width:400px;
+			height:150px;
+			/*border:1px solid green;*/
+			position:absolute;
+			z-index:999999;
+			right:48px;
+			top:85px;
+		}
+		.box_ewm li{
+			display:block;
+			list-style-type:none;
+			width:162px;
+			height:150px; 
+			/*border:1px solid green;*/
+			float:left;
+			margin-left:28px;
+		}	
+	
+	.content{
+		width:1920px;
+		height:1545px;
+	    background:url(../image/25.jpg);
+		position:relative;
+		background-repeat:no-repeat;
+		background-size:cover;
+		top:-25px;
+		left:0px;
+		margin: 0px auto;
+		z-index:15;
+		}
+	.cont_1{
+		width:900px;
+		height:600px;
+	/*	background: #0F0;*/
+		list-style:none;
+		position:absolute;
+		margin-left:415px;
+		}
+	.cont-first{
+			list-style:none;
+			text-align:center;
+			margin:0px;s
+			padding:0px;			
+		}
+	.cont-first li:nth-child(1){
+		width:465px;
+		height:50px;
+		position:absolute;
+		margin-left:-413px;
+		/*border:solid 2px #FF0000;*/
+		font-family:微软雅黑;
+		font-size:25px;
+		color:#000;
+		line-height:47px;
+		}
+	.cont-first li a{
+		text-decoration:none;	
+		color: #000;
+		}
+/* CSS Document */
+

@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+    <title>中国航空科技</title>
+    <style>
+    	*{
+			margin:0px;
+			padding:0px;
+	}
+	/*导航栏样式 begin*/
+.hea{
+	 background-color: #1D5BAE;
+}
+.qhcomment {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100px;
+           
+        }
+.navigation{
+		position:absolute;
+		width:1000px;
+		height:0px;
+		background:rgba(0,0,0,0.1);		
+		z-index:100;
+		margin: 0 auto;
+	}
+	.navigation .nvalist{/*导航栏*/
+		width:990px;
+		height:47px;
+		/*border:1px solid green;*/
+		/*margin-left:450px;*/
+		margin-top:24px;
+	}
+	.navigation .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:60px;
+		padding:8px 8px;
+		border-radius:5px;
+        /*z-index:auto;*/
+	}
+	.navigation .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:30px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.navigation .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+
+    	.search_box{
+		position:absolute;
+		left: 900px;
+		top: 15px;
+		/*width:253px;*/
+		/*height:50px;*/
+		border-bottom:2px solid #fff;
+		border-radius:0 0 8px 8px;
+
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:300px;
+		height:50px;
+		text-indent:2em;
+		/*border:1px solid #fff;*/
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+		.iconfont{
+			font-size:12px;
+		}
+		#logo {
+		position: absolute;
+		top: 10px;
+		left: -250px;
+		width: 280px;
+		height: 84px;
+		/*border:1px solid red;*/
+		z-index: 9;
+		background-image: url(../image/logo.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    #logo a {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: #FC9;
+        text-decoration: none;
+        line-height: 67px;
+        font-family: "Comic Sans MS", cursive;
+    }
+/*导航栏样式 end*/
+	.nva_top_list{
+		width:1920px;
+		height:112px;
+		/*border:1px solid red;*/
+		position:relative;
+		top:-24px;
+		background:rgba(0,0,0,.8);
+		/*background:#09F;*/
+		margin:auto;
+	}
+	.nva_top_list .nvalist{/*导航栏*/
+		width:990px;
+		height:87px;
+		/*border:1px solid green;*/
+		position:absolute;
+		top:17px;
+		left:50%;
+		margin-left:-490px;
+	}
+	.nva_top_list .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:50px;
+		padding:8px 8px;
+		border-radius:5px;
+		margin-top:30px;
+	}
+	.nva_top_list .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:40px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.nva_top_list .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:200px;
+		height:50px;
+		text-indent:2em;
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+	.iconfont{
+		font-family: "iconfont" !important;
+		font-size: 16px;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color:#fff;
+	}
+	.switcher_icon{
+		display:block;
+		width:115px;
+		height:30px;
+		margin-top:50px;
+		right:0px;
+		position:absolute;
+		margin-left:0px;
+		z-index:12;
+	}
+	.switcher_icon li{
+		list-style:none;
+		float:left;	
+	}
+	.switcher_icon li a {
+		display:block;
+		text-decoration:none;
+		color:#fff;
+		font-size:14px;
+		padding:4px 10px;
+		line-height:30px;
+	}
+	.Technology_bg{
+		width:1300px;
+		height:100px;
+		/*border:1px solid red;*/
+		margin:auto;
+		position:relative;
+		top:0px;
+		z-index:1;
+	}
+	.Technology_bg span:nth-child(1){
+		display:block;
+		width:inherit;
+		height:40px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:0px;
+		font-weight:bold;
+		line-height:40px;
+		font-size:18px;
+		z-index:2;
+	}
+	.Technology_bg span:nth-child(3){
+		display:block;
+		width:90px;
+		height:30px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:6px;
+		margin-left:182px;
+		line-height:30px;
+		font-size:16px;
+		color:#000;
+		font-weight:bold;
+	}
+	.Technology_bg  a{
+		margin-left:133px;
+		text-decoration:none;
+		color:#000;
+		font-size:20px;
+		line-height:40px;
+		font-weight:bold;
+		position:absolute;
+		z-index:555;		
+	}
+	#kj_tit{/*<span></span>*/
+		display:block;
+		width:1300px;
+		height:50px;
+		text-align:center;
+		/*border:1px solid red;*/
+		font-size:35px;
+		font-weight:bold;
+		font-size:30px;
+	}
+	.Aviation_technology{
+		width:1300px;
+		height:3000px;
+		/*border:1px solid pink;*/
+		margin: 0px auto;
+	}
+	/*尾部*/
+	#footer{
+			width:100%;
+			min-width: 800px;
+			height:300px;
+			background:rgba(0,0,0,0.5);
+			position:relative;
+			z-index:99;
+			margin:100px auto 0;
+		}
+		#ft_bottom{
+			width:1000px;
+			height:300px;
+			/*border:1px solid #F00;*/
+			margin:auto;
+		}
+		#footer_add1{
+			width:295px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#FFF 1px solid;
+		}
+		#footer_add1 h4{
+			margin-left:2em;
+			margin-top:1em;
+			color:#CCC;
+		}
+		#footer_add1 ul{
+			list-style:none;
+		}
+		#footer_add1 li{
+			margin-top:1em;
+		}
+		#footer_add1 li a{
+			color:#CCC;
+		}
+		#footer_add2{
+			width:450px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#fff 1px solid;
+		}
+		
+		
+		#add2_list{
+			width:430px;
+			height:52px;
+			/*background:#063;*/
+			float:left;
+			/*margin-left:10px;*/
+			margin-top:20px;
+		}
+		#add2_list li{
+			float:left;
+			margin-left:0.2em;
+			line-height:50px;
+		}
+		#add2_list li a{
+			color:#CCC;
+			text-decoration:none;
+		}
+		#add2_list ul{
+			list-style:none;
+		}
+		#add2_list p{
+			float:left;
+			margin-top:20px;
+			color:#CCC;
+			margin-left:28%;
+		}
+		#add2_ewm{
+			width:538px;
+			height:50px;
+			
+			float:left;
+			
+			margin-top:65px;
+			display:flex;
+		}
+		#add2_ewm li{
+			
+			flex:0.1;
+			width:40px;
+			height:inherit;
+			/*border:1px solid #fff;*/
+			list-style-type:none;
+		}
+		.icon_tu {
+		  font-family: "iconfont" !important;
+		  font-size: 16px;
+		  font-style: normal;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  color:#fff;
+		  font-size:25px;
+		  text-align:center;
+		  line-height:50px;
+		  cursor:pointer;
+		}
+		
+		.footer_add3{
+    		float: left;
+    		width: 250px;
+    		margin-top: 40px;
+    	}
+		.footer_add3 img{
+			width: 100px;
+			height: 100px;
+			margin-top: 65px;
+			margin-left: 20px;
+		}			.box_ewm{
+				width:400px;
+				height:150px;
+				/*border:1px solid green;*/
+				position:absolute;
+				z-index:999999;
+				right:48px;
+				top:85px;
+			}
+			.box_ewm li{
+				display:block;
+				list-style-type:none;
+				width:162px;
+				height:150px; 
+				/*border:1px solid green;*/
+				float:left;
+				margin-left:28px;
+			}
+    </style>
+    </head>
+    
+    <body>
+    	<div class="hea">   		
+            <div class="qhcomment">
+                <div class="navigation">
+                    <!--导航栏背景-->
+                    <div id="logo">
+                        <!--logo图标-->
+                        <a href="#"></a>
+                    </div>
+                    <ul class="nvalist">
+                        <li>
+                            <a href="../index.html">网站首页</a>
+                        </li>
+                        <li>
+                            <a href="../space flight/index.html">中国航天</a>
+                        </li>
+                        <li>
+                            <a href="../aviation/index.html">中国航空</a>
+                        </li>
+                        <li>
+                            <a href="../china sailing/index.html">中国航海</a>
+                        </li>
+                        <li>
+                            <a href="../about us/about.html">关于我们</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="search_box">
+                        <input type="text" placeholder="请输入搜索内容" />
+                        <!--<input type="submit" value="" />-->
+                        <span>
+                            <i class="iconfont icon-sousuo" style="color:#fff; font-size:18px;"></i>
+                        </span>
+                    </div>
+            	</div>
+          	</div>
+        </div>
+        <!--9.3-->
+        
+        <div class="Technology_bg">
+        	<span>您所在位置：></span>
+            <a href="../index.html#indexgd">返回</a>
+        	<span>>科技详情</span>     
+        </div>
+        <div class="Aviation_technology">
+        	<span id="kj_tit">中国航空科技</span>
+        	<p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中华人民共和国的科学技术水平得到了很大提高，在计算机、航空航天、生物工程、新能源、新材料、激光技术等领域都取得了重大科技成果。20世纪80至90年代，中国政府先后推出“863计划”和“科教兴国战略”，两者大大促进了该国科技的发展和进步。</p>
+            <span style="display:block; width:700px; height:450px; margin:40px auto 5px;">
+            	<img src="../image/hangkong_12.jpg" width="700" height="450" alt="hangkong_1">
+            </span>
+            <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">简介</span>
+            <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自建国后，20世纪60至70年代，中国先后掌握了“两弹一星”技术；1973年，水稻专家袁隆平培育出了“籼型杂交水稻”，该水稻亩产比普通水稻增产20%以上，被称为“东方魔稻”。袁隆平因此获得了中国“国家最高科学技术奖”。1986年3月，在四位老科学家的建议下，时任中顾委主任邓小平作出批示，要求“找些专家和有关负责同志讨论，提出意见，以凭决策”。“863计划”就因上述时间而得名。半年后，《863计划纲要》形成，选择生物技术、航天技术、信息技术、激光技术、自动化技术、能源技术、新材料和海洋高技术八个领域列为中国发展高技术的重点。1995年5月，中共中央，中国国务院作出《关于加速科学技术进步的决定》，正式提出科教兴国战略。</p>
+            <p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中华人民共和国政府高度重视科学研究，从2000年到2010年，中华人民共和国的科研经费从895.7亿元人民币增长到6980亿元人民币，年均增长率为22.79%，科研经费占GDP的比重从2000年的1.00%增长至2010年的1.75%，已超过世界平均水平（1.60%）。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中华人民共和国政府高度重视科学研究，从2000年到2010年，中华人民共和国的科研经费从895.7亿元人民币增长到6980亿元人民币，年均增长率为22.79%，科研经费占GDP的比重从2000年的1.00%增长至2010年的1.75%，已超过世界平均水平（1.60%）。中国在2011年的专利申请数连续超过日本及美国世界第一，2010年被《科学引文索引》（SCI）收录的世界科技论文总数为142.1万篇，其中中国科技论文14.84万篇，占10.4%，位居世界第二。自从改革开放以来科技发展开始提速，众多的国际评级机构和报告认为中国在航天、载人深潜、量子通讯、高铁超导、电子技术、核能、激光等领域成果显著，但同时在绿色能源、发动机、精密制造、自动化等领域上与发达国家仍有差距。</p>
+         <span style="display:block; width:700px; height:450px; margin:40px auto 5px;">
+            	<img src="../image/yuanlao.jpg" width="700" height="450" alt="hangkong_1">
+         </span>
+         <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">科技奖项</span>
+        <p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国政府为了奖励在科技进步活动中作出突出贡献的公民，推动中国科技事业的发展设立五个国家科学技术奖。包括国家最高科学技术奖、国家自然科学奖、国家技术发明奖、国家科学技术进步奖、国际科学技术合作奖。其中规格最高的奖项当属国家最高科学技术奖。国家最高科学技术奖每年评审一次，每次选出不超过两名科技成就卓著、社会贡献巨大的公民，由国家主席亲自签署并颁发荣誉证书和高额奖金。每位获奖者的奖金总额均为人民币500万元，其中50万元直接授予个人，另外450万元作为科学研究经费由获奖人全权管理具体用途。</p>
+        <p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国家自然科学奖是授予在数学、物理学、化学、天文学、地球科学、生命科学等基础研究和信息、材料、工程技术等领域的应用基础研究中，阐明自然现象、特征和规律、做出重大科学发现的中国公民的奖项，同时国家自然科学奖不授予组织。国家自然科学奖设一、二等两个奖励等级。国家自然科学一等奖是自然科学领域的国家最高奖。</p>
+        <p style="opacity:0.7; margin-top:20px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国家技术发明奖是授予在产品、工艺、材料及其系统等重大技术发明的中国公民，同时国家技术发明奖不授予组织。国家技术发明奖设一、二等两个奖励等级。国家技术发明奖表彰的是当年中国国民经济中新的、先进的、效益好的新技术。
+   	 	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国家科学技术进步奖是授予在技术研究、技术开发、技术创新、推广应用先进科学技术成果、促进高新技术产业化，以及完成重大科学技术工程、计划等过程中做出创造性贡献的中国公民和组织。每年国家科学技术进步奖总数不超过400项，分为特等奖，一等奖,二等奖3个等级。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国国际科学技术合作奖是由中国国务院设立的国家科学技术奖励，以奖励对中国科技事业作出贡献的外国人或组织。其前身为国家科学技术委员会设立的中国国际科技合作奖，根据1993年7月经全国人大常委会八届二次会议通过的（中华人民共和国科学技术进步法）的规定，国务院设立“中华人民共和国国际科学技术合作奖”（简称国际科技合作奖）。</p>
+        
+        <p style="opacity:0.7; margin-top:15px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;除了这些国家级别的奖项外，中国各级政府也设立了众多科技奖项来表彰在科技领域做出突出贡献的公民。同样民间也设立了科技奖项和基金。</p>
+        <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">电子技术</span>
+        
+        <p style="opacity:0.7; margin-top:15px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在电子与信息技术产业方面，中国取得了长足进步，达到世界一流水平。2009年中国制造世界上48.3%的电视机，49.9%的移动电话，60.9%的个人电脑，和75%的液晶监视器。国产制造的电子元件已成为一个重要来源，2010年中国软件行业在软件和信息服务市场的份额以高于15%的速度增加，在过去的十年里平均增幅达到36%。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国是第一个以发展中国家的身份制造了超级计算机的国家，2011年中国拥有世界最快的500个超级计算机中的74个，而十年前她仍默默无闻。中国以国产微处理器为基础制造出本国第一台超级计算机名为神威蓝光，部署于天津滨海新区的国家超级计算天津中心的业务主机天河一号和曙光计算机天津产业基地生产的曙光星云，分别为世界超级计算机运算速度排名的第二和第四名。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;且由中国科学技术大学和清华大学组成的联合小组，成功实现了16公里的量子态隐形传输，这一距离是当时世界记录最远距离的20多倍。上海交通大学有望实现探测“马约拉纳费米子”，使中国进入量子计算机的领先领域。2012年一款计算机多CPU高速互连的高性能专用交换芯片在中国科学院微电子研究所系统封装技术研究室封装成功，结束了中国高端芯片外国封装的历史</p>
+        <span style="display:block; width:700px; height:450px; margin:40px auto 5px;">
+            	<img src="../image/keji_12.jpg" width="700" height="450" alt="hangkong_1">
+         </span>
+        <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">高速铁路</span>
+        <p style="opacity:0.7; margin-top:15px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2000年在中国的土地上还没有一条真正意义上的高速铁路，但在2010年中国的高速铁路运营里程就已经超过
+欧洲的总和。中国制造的CRH系列高速电力动车组均采用动力分散式，运行时速可以达到200公里以上，最高时速甚至可以达到400公里以上。中华人民共和国铁道部由2004年起先后向加拿大庞巴迪、日本川崎重工业、法国阿尔斯通、德国西门子公司等外国企业购买高速铁路车辆技术，以引进国外先进技术并吸收的方式，由中国北车集团和中国南车集团旗下的铁路车辆制造企业生产，达到一定程度的国产化，并再以此为基础进行自主创新研发。现已经发展了6个系列，分别是CRH1、CRH2、CRH3、CRH5、CRH6、CRH380。</p>
+        
+        <p style="opacity:0.7; margin-top:15px; line-height:30px; font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还有核能技术、航天技术、航空技术、激光技术、生物技术等等。</p>
+        
+        </div>
+        
+      
+        <!--尾部-->
+        
+<div id="footer">
+			<div id="ft_bottom">
+				<div id="footer_add1">
+					<h4>联系我们</h4>
+					<ul>
+						<li>
+							<a>电话：010-123456789</a>
+						</li>
+						<li>
+							<a>传真：010-123456789</a>
+						</li>
+						<li>
+							<a>地址：梧州职业学院三龙大道88号</a>
+						</li>
+						<li>
+							<a>邮编：530700</a>
+						</li>
+						<li>
+							<a>邮箱：2526193201@qq.com</a>
+						</li>
+					</ul>
+				</div>
+				<div id="footer_add2">
+					<ul id="add2_ewm">
+						<li class="icon_tu icon-weixin">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qq">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qqkongjian">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-weibo">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-zhongwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-yingwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-shouji">
+							<a href="#"></a>
+						</li>
+					</ul>
+					<div id="add2_list">
+						<ul>
+								<li>
+								<a href="../index.html">中国启航</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../space flight/index.html">中国航天</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../china sailing/index.html">中国航海</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../aviation/index.html">中国航空</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../about us/about.html">关于我们</a>
+							</li>
+						</ul>
+						<p>版权所有《2019》实验室小组</p>
+					</div>
+
+				</div>
+				<div class="footer_add3">
+					<img src="../images/weix.jpg" />
+					<img src="../images/qq.jpg" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+    <title>航空大世界</title>
+    <style>
+    	*{
+			margin:0px;
+			padding:0px;
+	}
+	/*导航栏样式 begin*/
+.hea{
+	 background-color: #1D5BAE;
+}
+.qhcomment {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100px;
+           
+        }
+.navigation{
+		position:absolute;
+		width:1000px;
+		height:0px;
+		background:rgba(0,0,0,0.1);		
+		z-index:100;
+		margin: 0 auto;
+	}
+	.navigation .nvalist{/*导航栏*/
+		width:990px;
+		height:47px;
+		/*border:1px solid green;*/
+		/*margin-left:450px;*/
+		margin-top:24px;
+	}
+	.navigation .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:60px;
+		padding:8px 8px;
+		border-radius:5px;
+        /*z-index:auto;*/
+	}
+	.navigation .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:30px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.navigation .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+
+    	.search_box{
+		position:absolute;
+		left: 900px;
+		top: 15px;
+		/*width:253px;*/
+		/*height:50px;*/
+		border-bottom:2px solid #fff;
+		border-radius:0 0 8px 8px;
+
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:300px;
+		height:50px;
+		text-indent:2em;
+		/*border:1px solid #fff;*/
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+		.iconfont{
+			font-size:12px;
+		}
+		#logo {
+		position: absolute;
+		top: 10px;
+		left: -250px;
+		width: 280px;
+		height: 84px;
+		/*border:1px solid red;*/
+		z-index: 9;
+		background-image: url(../image/logo.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    #logo a {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: #FC9;
+        text-decoration: none;
+        line-height: 67px;
+        font-family: "Comic Sans MS", cursive;
+    }
+/*导航栏样式 end*/
+	.nva_top_list{
+		width:1920px;
+		height:112px;
+		/*border:1px solid red;*/
+		position:relative;
+		top:-24px;
+		background:rgba(0,0,0,.8);
+		/*background:#09F;*/
+		margin:auto;
+	}
+	.nva_top_list .nvalist{/*导航栏*/
+		width:990px;
+		height:87px;
+		/*border:1px solid green;*/
+		position:absolute;
+		top:17px;
+		left:50%;
+		margin-left:-490px;
+	}
+	.nva_top_list .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:50px;
+		padding:8px 8px;
+		border-radius:5px;
+		margin-top:30px;
+	}
+	.nva_top_list .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:40px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.nva_top_list .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+	
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:200px;
+		height:50px;
+		text-indent:2em;
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+	.iconfont{
+		font-family: "iconfont" !important;
+		font-size: 16px;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color:#fff;
+	}
+	.switcher_icon{
+		display:block;
+		width:115px;
+		height:30px;
+		margin-top:50px;
+		right:0px;
+		position:absolute;
+		margin-left:0px;
+		z-index:12;
+	}
+	.switcher_icon li{
+		list-style:none;
+		float:left;	
+	}
+	.switcher_icon li a {
+		display:block;
+		text-decoration:none;
+		color:#fff;
+		font-size:14px;
+		padding:4px 10px;
+		line-height:30px;
+	}
+	.Technology_bg{
+		width:1300px;
+		height:100px;
+		/*border:1px solid red;*/
+		margin:auto;
+		position:relative;
+		top:0px;
+		z-index:1;
+	}
+	.Technology_bg span:nth-child(1){
+		display:block;
+		width:inherit;
+		height:40px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:0px;
+		font-weight:bold;
+		line-height:40px;
+		font-size:18px;
+		z-index:2;
+	}
+	.Technology_bg span:nth-child(3){
+		display:block;
+		width:90px;
+		height:30px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:6px;
+		margin-left:182px;
+		line-height:30px;
+		font-size:16px;
+		color:#000;
+		font-weight:bold;
+	}
+	.Technology_bg  a{
+		margin-left:133px;
+		text-decoration:none;
+		color:#000;
+		font-size:20px;
+		line-height:40px;
+		font-weight:bold;
+		position:absolute;
+		z-index:555;		
+	}
+	#kj_tit{/*<span></span>*/
+		display:block;
+		width:1300px;
+		height:50px;
+		text-align:center;
+		/*border:1px solid red;*/
+		font-size:35px;
+		font-weight:bold;
+		font-size:30px;
+	}
+	.Aviation_technology{
+		width:1300px;
+		height:2160px;
+		/*border:1px solid pink;*/
+		margin: 0px auto;
+	}
+	/*尾部*/
+	/*尾部CSS*/
+		#footer{
+			width:100%;
+			min-width: 800px;
+			height:300px;
+			background:rgba(0,0,0,0.5);
+			position:relative;
+			z-index:99;
+			margin:100px auto 0;
+		}
+		#ft_bottom{
+			width:1000px;
+			height:300px;
+			/*border:1px solid #F00;*/
+			margin:auto;
+		}
+		#footer_add1{
+			width:295px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#FFF 1px solid;
+		}
+		#footer_add1 h4{
+			margin-left:2em;
+			margin-top:1em;
+			color:#CCC;
+		}
+		#footer_add1 ul{
+			list-style:none;
+		}
+		#footer_add1 li{
+			margin-top:1em;
+		}
+		#footer_add1 li a{
+			color:#CCC;
+		}
+		#footer_add2{
+			width:450px;
+			height:240px;
+			/*background:#036;*/
+			float:left;
+			margin-top:2em;
+			border-right:#fff 1px solid;
+		}
+		
+		
+		#add2_list{
+			width:430px;
+			height:52px;
+			/*background:#063;*/
+			float:left;
+			/*margin-left:10px;*/
+			margin-top:20px;
+		}
+		#add2_list li{
+			float:left;
+			margin-left:0.2em;
+			line-height:50px;
+		}
+		#add2_list li a{
+			color:#CCC;
+			text-decoration:none;
+		}
+		#add2_list ul{
+			list-style:none;
+		}
+		#add2_list p{
+			float:left;
+			margin-top:20px;
+			color:#CCC;
+			margin-left:28%;
+		}
+		#add2_ewm{
+			width:538px;
+			height:50px;
+			
+			float:left;
+			
+			margin-top:65px;
+			display:flex;
+		}
+		#add2_ewm li{
+			
+			flex:0.1;
+			width:40px;
+			height:inherit;
+			/*border:1px solid #fff;*/
+			list-style-type:none;
+		}
+		.icon_tu {
+		  font-family: "iconfont" !important;
+		  font-size: 16px;
+		  font-style: normal;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  color:#fff;
+		  font-size:25px;
+		  text-align:center;
+		  line-height:50px;
+		  cursor:pointer;
+		}
+		
+		.footer_add3{
+    		float: left;
+    		width: 250px;
+    		margin-top: 40px;
+    	}
+		.footer_add3 img{
+			width: 100px;
+			height: 100px;
+			margin-top: 65px;
+			margin-left: 20px;
+		}
+		
+			.box_ewm{
+				width:400px;
+				height:150px;
+				/*border:1px solid green;*/
+				position:absolute;
+				z-index:999999;
+				right:48px;
+				top:85px;
+			}
+			.box_ewm li{
+				display:block;
+				list-style-type:none;
+				width:162px;
+				height:150px; 
+				/*border:1px solid green;*/
+				float:left;
+				margin-left:28px;
+			}
+    </style>
+    </head>
+    
+    <body>
+    	<div class="hea">   		
+            <div class="qhcomment">
+                <div class="navigation">
+                    <!--导航栏背景-->
+                    <div id="logo">
+                        <!--logo图标-->
+                        <a href="#"></a>
+                    </div>
+                    <ul class="nvalist">
+                       <li>
+                            <a href="../index.html">网站首页</a>
+                        </li>
+                        <li>
+                            <a href="../space flight/index.html">中国航天</a>
+                        </li>
+                        <li>
+                            <a href="../aviation/index.html">中国航空</a>
+                        </li>
+                        <li>
+                            <a href="../china sailing/index.html">中国航海</a>
+                        </li>
+                        <li>
+                            <a href="../about us/about.html">关于我们</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="search_box">
+                        <input type="text" placeholder="请输入搜索内容" />
+                        <!--<input type="submit" value="" />-->
+                        <span>
+                            <i class="iconfont icon-sousuo" style="color:#fff; font-size:18px;"></i>
+                        </span>
+                    </div>
+            	</div>
+          	</div>
+        </div>
+        <!--9.3-->
+        
+        <div class="Technology_bg">
+        	<span>您所在位置：></span>
+            <a href="../index.html#indexgd">返回</a>
+        	<span>>航世详情</span>     
+        </div>
+        <div class="Aviation_technology">
+        	<span id="kj_tit">航空大世界</span>
+        	<p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;航空大世界，是保利集团与中国航空工业集团公司联合出资组建，是保利集团承接军民融合战略、促进文化产业进步、推进科技创新发展的重要载体。<br>以航空大世界旅游度假区为核心业务，同时布局航空文化传播、飞翔家亲子乐园、航空竞技赛事、科技娱乐设备、航空创意应用等多个领域。</p>
+            <span style="display:block; width:700px; height:450px; margin:40px auto 5px;">
+            	<img src="../image/hkdsj_1.jpg" width="700" height="450" alt="hangkong_1">
+            </span>
+            <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">项目简介</span>
+            <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成都航空科技文化博览中心，简称“成都航空大世界”，位于天府新区兴隆镇。目前项目一期工程建设顺利，包括管网、桩基础等游乐设备地下预埋件工程都已完成。该项目是融合航空博物展示、航空科技文化体验、航空飞行公园、主题酒店、主题商业、创客中心于一体的大型航空科技文化综合项目。其中的主题乐园，从达·芬奇手稿中的飞行器到未来世界的科幻战机，80天环游地球的传奇故事到穿越太空的神奇世界，人类航空历史发展的重要阶段、有关飞行的故事和想象大众都可以在这里体验。</p>
+            <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">项目特色</span>
+            <p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为龙头项目，航空博物馆不仅有众多飞行器文物，还采用了最新的科技互动展示手段，让游客能够有全新的观感体验，加深大众对航空文化知识的理解。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;启动仪式上，来自国内外的优秀航模表演队也惊艳亮相。成都航空大世界建成后，飞行运动公园将常年举办专业飞行器大奖赛、航空夏令营等活动，打造国内首屈一指的航空运动嘉年华。</p>
+           <p style="opacity:0.7; margin-top:15px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;航空科技中有很多可以转化，比如飞行员跳伞训练的风洞，老百姓就非常喜欢。跳伞模拟设备的整体转化，能让普通群众体会到航空的乐趣，进而让他们转化为航空文化的关注者和传播者。我们可以把更多的人培养成航空的粉丝，未来就会成为航空的动能。  第二地球的项目，让玩家体验进入太空，离开地球之后的生活。我们会基于已有探索，在游乐过程中，加入对未来的创想。很多飞行体验可以在游乐中展现，其他游乐园的过山车可能更多的是体验极速刺激，而在这里，将把VR（虚拟现实技术）和游乐体验设备结合，玩家戴着VR眼镜，在坐过山车的全程体验战机间的相互追逐。通过虚实结合的方式，我们将把最先进的航空科技传达给大家。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;据介绍，这个项目将以航空科技为依托、航空文化为主线，打造中国西南第一家庭度假目的地。航空大世界的龙头项目航空博物馆不仅拥有众多飞行器文物，还将采用最新的科技互动展示手段，让游客能有全新的观感体验。在航空科技主题娱乐体验区，游客可以体验到由航空科技成果转化而来的娱乐体验项目。飞行运动公园常年举办专业飞行器大奖赛、航空夏令营等活动，打造国内首屈一指的航空运动嘉年华。创意工厂则集聚航空创意发展基金，实现航空技术的娱乐成果转化。</p>
+         <span style="display:block; width:700px; height:450px; margin:40px auto 5px;">
+            	<img src="../image/hkdsj_3.jpg" width="700" height="450" alt="hangkong_1">
+         </span>
+         <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">区位优势</span>
+        <p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在成都航空大世界的项目规划中，专门设置了普通游乐场没有的板块——航空文化产业孵化基地，简称为“创客小镇”，这意味着这里将产生以航空为核心的创业项目，孵化具备一定实力的企业。今后，这个区域将重点孵化科技设备研发、互动游戏开发、航空影视与动画制作、航空创意工厂和衍生品开发等领域的创业项目。其中，互动优势开发将采用虚拟现实技术（VR）、增强现实技术（AR）、跨平台线上线下互动技术，结合经典航空故事、航空元素，开发航空题材游戏，为玩家提供逼真的航空体验场景，感受到身临其境飞行乐趣。</p>
+        <p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此外，成都航空大世界还携手美国莱特兄弟有限公司，共同重现 20 世纪初莱特兄弟飞机发明过程中的全部机型。现场包括从 1900 年、1902 年、1903 年的莱特滑翔机到飞行模拟器，到人类历史上第一架飞机“飞行器 I 号”到“飞行器 III 号”。未来，游客还有机会在飞行模拟器上体验驾驶莱特兄弟飞机在天空中飞翔的感觉。这些机型将完整呈现人类首架飞机的发明史。</p>
+        <p style="opacity:0.7; margin-top:20px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目邀请《三体》作者刘慈欣担任首席科学顾问。刘慈欣将主要为项目建设提供科幻方面的创意和策划。
+此座以“航空科技”为主题的乐园，大多数主题娱乐产品都是由航空工业的科技成果转化而来，科幻大咖刘慈欣的加盟，让保利航空大世界增添了“科幻”色彩。</p>
+        <p style="opacity:0.7; margin-top:15px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;除了这些国家级别的奖项外，中国各级政府也设立了众多科技奖项来表彰在科技领域做出突出贡献的公民。同样民间也设立了科技奖项和基金。</p>
+        <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">所属公司</span>
+        
+        <p style="opacity:0.7; margin-top:15px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;航空大世界科技文化有限公司成立于2014年8月，由中国保利集团公司与中国航空工业集团公司联合出资组建，是保利集团承接军民融合战略、促进文化产业进步、推进科技创新发展的重要载体。</p>
+        
+        </div>
+        
+      
+        <!--尾部-->
+        
+<div id="footer">
+			<div id="ft_bottom">
+				<div id="footer_add1">
+					<h4>联系我们</h4>
+					<ul>
+						<li>
+							<a>电话：010-123456789</a>
+						</li>
+						<li>
+							<a>传真：010-123456789</a>
+						</li>
+						<li>
+							<a>地址：梧州职业学院三龙大道88号</a>
+						</li>
+						<li>
+							<a>邮编：530700</a>
+						</li>
+						<li>
+							<a>邮箱：2526193201@qq.com</a>
+						</li>
+					</ul>
+				</div>
+				<div id="footer_add2">
+					<ul id="add2_ewm">
+						<li class="icon_tu icon-weixin">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qq">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-qqkongjian">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-weibo">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-zhongwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-yingwen">
+							<a href="#"></a>
+						</li>
+						<li class="icon_tu icon-shouji">
+							<a href="#"></a>
+						</li>
+					</ul>
+					<div id="add2_list">
+						<ul>
+								<li>
+								<a href="../index.html">中国启航</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../space flight/index.html">中国航天</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../china sailing/index.html">中国航海</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../aviation/index.html">中国航空</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../about us/about.html">关于我们</a>
+							</li>
+						</ul>
+						<p>版权所有《2019》实验室小组</p>
+					</div>
+
+				</div>
+				<div class="footer_add3">
+					<img src="../image/weix.jpg"/>
+					<img src='../image/qq.jpg'/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

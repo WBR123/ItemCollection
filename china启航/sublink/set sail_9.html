@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+    <title>人才理念</title>
+    <style>
+    	*{
+			margin:0px;
+			padding:0px;
+	}
+	       
+        /*导航栏样式 begin*/
+.hea{
+	 background-color: #1D5BAE;
+}
+.qhcomment {
+            width: 1000px;
+            margin: 0 auto;
+            height: 100px;
+           
+        }
+.navigation{
+		position:absolute;
+		width:1000px;
+		height:0px;
+		background:rgba(0,0,0,0.1);		
+		z-index:100;
+		margin: 0 auto;
+	}
+	.navigation .nvalist{/*导航栏*/
+		width:990px;
+		height:47px;
+		/*border:1px solid green;*/
+		/*margin-left:450px;*/
+		margin-top:24px;
+	}
+	.navigation .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:60px;
+		padding:8px 8px;
+		border-radius:5px;
+        /*z-index:auto;*/
+	}
+	.navigation .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:30px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.navigation .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+
+    	.search_box{
+		position:absolute;
+		left: 900px;
+		top: 15px;
+		/*width:253px;*/
+		/*height:50px;*/
+		border-bottom:2px solid #fff;
+		border-radius:0 0 8px 8px;
+
+	}
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:300px;
+		height:50px;
+		text-indent:2em;
+		/*border:1px solid #fff;*/
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+		.iconfont{
+			font-size:12px;
+		}
+		#logo {
+		position: absolute;
+		top: 10px;
+		left: -250px;
+		width: 280px;
+		height: 84px;
+		/*border:1px solid red;*/
+		z-index: 9;
+		background-image: url(../image/logo.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    #logo a {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: #FC9;
+        text-decoration: none;
+        line-height: 67px;
+        font-family: "Comic Sans MS", cursive;
+    }
+/*导航栏样式 end*/
+	.nva_top_list{
+		width:1920px;
+		height:112px;
+		/*border:1px solid red;*/
+		position:relative;
+		top:-24px;
+		background:rgba(0,0,0,.8);
+		/*background:#09F;*/
+		margin:auto;
+	}
+	.nva_top_list .nvalist{/*导航栏*/
+		width:990px;
+		height:87px;
+		/*border:1px solid green;*/
+		position:absolute;
+		top:17px;
+		left:50%;
+		margin-left:-490px;
+	}
+	.nva_top_list .nvalist li{
+		display:blck;
+		width:90px;
+		height:30px;
+		/*border:1px solid red;*/
+		list-style:none;
+		float:left;
+		margin-left:50px;
+		padding:8px 8px;
+		border-radius:5px;
+		margin-top:30px;
+	}
+	.nva_top_list .nvalist li a{
+		display:inline-block;
+		position:absolute;
+		top:28px;
+		width:127px;
+		height:42px;
+		padding:4px;
+		margin-left:-23px;
+		line-height:40px;
+		/*border:1px solid red;*/
+		text-align:center;
+		text-decoration:none;
+		font-size:20px;
+		color:#FFF;
+		font-weight:600;
+		border-radius:5px;
+		font-family:"Comic Sans MS", cursive;
+	}
+	.nva_top_list .nvalist li:hover{
+		border-radius:5px;		
+		border-bottom:2.5px solid #F60;
+	}
+	
+	.search_box span{
+		display:inline-block;
+		position:absolute;
+		right:5px;
+		top:50%;
+		margin-top:-6px;
+		width:29px;
+		height:28px;
+		cursor:pointer;
+		/*background:#fff;*/
+	}
+	.search_box input[type=text]{
+		display:inline-block;
+		width:200px;
+		height:50px;
+		text-indent:2em;
+		top:0px;
+		background:none;
+		border:none;
+		color:#fff;
+	}
+	.search_box input[type=submit]{
+		display:inline-block;
+		position:absolute;
+		width:71px;
+		height:52px;
+		top:0px;
+		border:none;
+		right:0px;		
+		color:#fff;
+		font-family:'微软雅黑';
+		font-weight:bold;
+		font-size:1.8em;
+		background:none;
+	}
+	.iconfont{
+		font-family: "iconfont" !important;
+		font-size: 16px;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color:#fff;
+	}
+	.switcher_icon{
+		display:block;
+		width:115px;
+		height:30px;
+		margin-top:50px;
+		right:0px;
+		position:absolute;
+		margin-left:0px;
+		z-index:12;
+	}
+	.switcher_icon li{
+		list-style:none;
+		float:left;	
+	}
+	.switcher_icon li a {
+		display:block;
+		text-decoration:none;
+		color:#fff;
+		font-size:14px;
+		padding:4px 10px;
+		line-height:30px;
+	}
+	.Technology_bg{
+		width:1300px;
+		height:100px;
+		/*border:1px solid red;*/
+		margin:auto;
+		position:relative;
+		top:0px;
+		z-index:1;
+	}
+	.Technology_bg span:nth-child(1){
+		display:block;
+		width:inherit;
+		height:40px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:0px;
+		font-weight:bold;
+		line-height:40px;
+		font-size:18px;
+		z-index:2;
+	}
+	.Technology_bg span:nth-child(3){
+		display:block;
+		width:90px;
+		height:30px;
+		/*border:1px solid pink;*/
+		position:absolute;
+		top:6px;
+		margin-left:182px;
+		line-height:30px;
+		font-size:16px;
+		color:#000;
+		font-weight:bold;
+	}
+	.Technology_bg  a{
+		margin-left:133px;
+		text-decoration:none;
+		color:#000;
+		font-size:20px;
+		line-height:40px;
+		font-weight:bold;
+		position:absolute;
+		z-index:555;		
+	}
+	#kj_tit{/*<span></span>*/
+		display:block;
+		width:1300px;
+		height:50px;
+		text-align:center;
+		/*border:1px solid red;*/
+		font-size:35px;
+		font-weight:bold;
+		font-size:30px;
+	}
+	.Aviation_technology{
+		width:1300px;
+		height:2160px;
+		/*border:1px solid pink;*/
+		margin: 0px auto;
+	}
+	/*尾部*/
+	#footer{
+				width:1920px;
+				height:300px;
+				background:rgba(0,0,0,0.5);
+				position:relative;
+				z-index:99;
+				top:260px;
+				margin:auto;
+			}
+			#footer_add1{
+				width:300px;
+				height:240px;
+				/*background:#036;*/
+				float:left;
+				margin-top:2em;
+				border-right:#FFF 1px solid;
+			}
+			#footer_add1 h4{
+				margin-left:2em;
+				margin-top:1em;
+				color:#FFF;
+			}
+			#footer_add1 ul{
+				list-style:none;
+			}
+			#footer_add1 li{
+				margin-top:1em;
+			}
+			#footer_add1 li a{
+				color:#FFF;
+			}
+			#footer_add2{
+				width:620px;
+				height:240px;
+				/*background:#036;*/
+				float:left;
+				margin-top:2em;
+				border-right:#fff 1px solid;
+			}
+			#ft_bottom{
+				width:58em;
+				height:300px;
+				/*border:1px solid #F00;*/
+				margin:auto;
+			}
+			
+			#add2_list{
+				width:600px;
+				height:52px;
+				/*background:#063;*/
+				float:left;
+				margin-left:10px;
+				margin-top:20px;
+			}
+			#add2_list li{
+				float:left;
+				margin-left:1.1em;
+				line-height:50px;
+			}
+			#add2_list li a{
+				color:#CCC;
+				text-decoration:none;
+			}
+			#add2_list ul{
+				list-style:none;
+			}
+			#add2_list p{
+				float:left;
+				margin-top:20px;
+				color:#CCC;
+				margin-left:28%;
+			}
+			#add2_ewm{
+				width:480px;
+				height:50px;
+				/*background:#063;*/
+				float:left;
+				margin-left:32px;
+				margin-top:65px;
+				display:flex;
+			}
+			#add2_ewm li{
+				flex:1;
+				width:50px;
+				height:inherit;
+				/*border:1px solid #fff;*/
+				list-style-type:none;
+			}
+			.icon_tu {
+			  font-family: "iconfont" !important;
+			  font-size: 16px;
+			  font-style: normal;
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			  color:#fff;
+			  font-size:25px;
+			  text-align:center;
+			  line-height:50px;
+			  cursor:pointer;
+			}
+			.box_ewm{
+				width:400px;
+				height:150px;
+				/*border:1px solid green;*/
+				position:absolute;
+				z-index:999999;
+				right:48px;
+				top:85px;
+			}
+			.box_ewm li{
+				display:block;
+				list-style-type:none;
+				width:162px;
+				height:150px; 
+				/*border:1px solid green;*/
+				float:left;
+				margin-left:28px;
+			}
+    </style>
+    </head>
+    
+    <body>
+    	<div class="hea">   		
+            <div class="qhcomment">
+                <div class="navigation">
+                    <!--导航栏背景-->
+                    <div id="logo">
+                        <!--logo图标-->
+                        <a href="#"></a>
+                    </div>
+                    <ul class="nvalist">
+                        <li>
+                            <a href="../index.html">网站首页</a>
+                        </li>
+                        <li>
+                            <a href="../space flight/index.html">中国航天</a>
+                        </li>
+                        <li>
+                            <a href="../aviation/index.html">中国航空</a>
+                        </li>
+                        <li>
+                            <a href="../china sailing/index.html">中国航海</a>
+                        </li>
+                        <li>
+                            <a href="../about us/about.html">关于我们</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="search_box">
+                        <input type="text" placeholder="请输入搜索内容" />
+                        <!--<input type="submit" value="" />-->
+                        <span>
+                            <i class="iconfont icon-sousuo" style="color:#fff; font-size:18px;"></i>
+                        </span>
+                    </div>
+            	</div>
+          	</div>
+        </div>
+        <!--9.3-->
+        
+        <div class="Technology_bg">
+        	<span>您所在位置：></span>
+            <a href="../index.html#indexgd">返回</a>
+        	<span>>航世详情</span>     
+        </div>
+        <div class="Aviation_technology">
+        	<span id="kj_tit">人才理念</span>
+        	<p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人才理念是企业重视人才、爱护人才、合理开发人才、使用人才、留住人才、提升人才的指导思想和价值观念。</p>
+            <span style="display:block; width:700px; height:450px; margin:40px auto 5px;">
+            	<img src="../image/linian_2.jpg" width="700" height="450" alt="hangkong_1">
+            </span>
+            <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">概念</span>
+            <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人才理念是企业重视人才、爱护人才、合理开发人才、使用人才、留住人才、提升人才的指导思想和价值观念。谋事在人，成事也在人。人才富国才会富！</p>
+            <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">企业竞争</span>
+            <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当今企业间的竞争，归根结底是人才的竞争。树立什么样的人才理念、用什么样的人，事关企业的兴衰成败。如青岛市立医院的人才理念：“不拘一格，人尽其才。”</p>
+            
+            
+            <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">理念确定</span>
+             <p style="opacity:0.7; margin-top:10px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总结当前各企业的特点，人才理念的确定可以从以下几个方面确定：</p>
+            <p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、是从公司高层对人的基本假设上，如管理学中的X理论和Y理论人性假设。在两种假设下，确定的人才理念是不一样的。不但考虑到在不同的环境中人的需求是否得到满足还要考虑影响人的工作效率的因素，特别是到后来把人的感情因素也考虑了进来，“尊重个人”、“人性化管理”就成了很多公司追求的人才理念。</p>
+           <p style="opacity:0.7; margin-top:15px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、从企业与员工之间的关系上定位上确定。这种关系的定位在不同企业的工作分工、工作考核、薪酬分配上都有所体现。日本企业的观念是“我们是团队”，而美国企业的观念是“录用最优秀的人才”。在招聘选拔时，日本企业强调的是合作精神，而美国企业强调的是个人能力。这就是日、美合资企业中对总经理任命的观点截然相反的原因。
+           	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、可以从对员工的行为要求上定位。这种情况最明显的比较就是“理性经营”与“迅速行动”的差别，或者是“遵从文化”与“发扬个性创新”两种理念的差别。在这样两种不同的人才理念下，企业高层管理人员对人才的要求、选拔、考核方式也存在着明显的差别。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、从对待人才的态度上定位，如海尔的“赛马不相马”，IBM的“内部选拔与培养”。如某些企业，连续工作10年的员工，未经公司董事长和总裁的事先批准，不得被列为临时裁员和永久解雇对象，这样，企业文化对激发员工的工作热情发挥了非常大的作用。<br>
+            人才理念模糊最大的危害就是导致公司人事政策的不连续性。因为没有明确的人才理念，公司的人才政策就会因为内部或外部环境的微小变动而发生变动，并且公司的员工也不清楚自己应当怎样做才是对的，最终的结果是企业员工行为标准的多样化和多变性，导致企业员工无效行为过多，影响了人力资源的充分发挥。
+            </p>
+         <span style="display:block; width:700px; height:450px; margin:40px auto 5px;">
+            	<img src="../image/linian_1.jpg" width="700" height="450" alt="hangkong_1">
+         </span>
+         <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">理念差别</span>
+        <p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从人才的价值标准看：IBM首先尊重的是人的价值，而联想看重的则是员工对公司价值观的认同，两者的人才理念显然不同。</p>
+        <p style="opacity:0.7; margin-top:20px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IBM最成功的经典就是三个字：“尊重人”。这三个字既是IBM企业文化的核心，也是全体员工的基本信念：一，尊重机构内每一个成员的尊严和权利，充分调动员工的工作积极性；二，注重客户服务，力争百分之百的用户满意；三，精益求精，力求任何一项业务尽善尽美。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IBM创始人托马斯坚信，一切成功都来自于每一位员工的努力，把尊重员工视为IBM发展、变革与成功的基础，因此，每位员工的独特个性和潜力在IBM都能得到足够的尊重。</p>
+        <p style="opacity:0.7; margin-top:20px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联想把员工分成四类，一类是既认可联想价值观又出业绩的，这当然是最好的；第二类是能力非常强，能不断出业绩，但未必认可企业文化的，对这类人联想在人才和理和开发方面要考虑不同的策略；第三类是很认可联想价值，但做不出业绩来，是联想要着力来加强培养培训的群体；第四类又不认同又不出业绩，当然就毫不保留。</p>
+        <p style="opacity:0.7; margin-top:15px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联想人力资源部咨询服务总监邓致新表示：总的来说，联想的人才理念就是希望员工能够把个人追求融入到联想长远的发展之中。</p>
+        <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">管理依据</span>
+        
+        <p style="opacity:0.7; margin-top:15px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什么样的人才最有发展前途？概括地说就是有想法，有创意，有能力的人才。在一个企业内部人才有不同的划分方式，大体可分为管理人才与技术人才。技术人才的能力要求当然体现在技术方面，他所应具备的技术能力是适应企业发展需要的，不只是适应企业技术需要，而是根据企业发展战略，符合企业未来发展的需要。企业之间竞争非常激烈，单靠一项技术一个诀窍就想立于不败之地显然已是痴心妄想。</p>
+		<p style="opacity:0.7; margin-top:15px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;而管理人才的能力和素质评定相对复杂些，大概有这几个方面:</p>
+        <p style="opacity:0.7; margin-top:15px; line-height:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一，策划能力，决策能力。
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第二，组织能力
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三，计划能力。
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第四，沟通能力。
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第五，与沟通能力密切相关的是协调能力。
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第六，创造能力、创新能力。</p>
+        <!--<span style="display:block; width:700px; height:450px; margin:40px auto 5px;">
+            	<img src="image/keji_12.jpg" width="700" height="450" alt="hangkong_1">
+         </span>
+        <span style="font-size:30px; font-weight:bold; margin-left:25px; margin-top:30px; display:block; opacity:0.7;">高速铁路</span>
+        <p style="opacity:0.7; margin-top:15px; line-height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2000年在中国的土地上还没有一条真正意义上的高速铁路，但在2010年中国的高速铁路运营里程就已经超过
+欧洲的总和。中国制造的CRH系列高速电力动车组均采用动力分散式，运行时速可以达到200公里以上，最高时速甚至可以达到400公里以上。中华人民共和国铁道部由2004年起先后向加拿大庞巴迪、日本川崎重工业、法国阿尔斯通、德国西门子公司等外国企业购买高速铁路车辆技术，以引进国外先进技术并吸收的方式，由中国北车集团和中国南车集团旗下的铁路车辆制造企业生产，达到一定程度的国产化，并再以此为基础进行自主创新研发。现已经发展了6个系列，分别是CRH1、CRH2、CRH3、CRH5、CRH6、CRH380。</p>
+        
+        <p style="opacity:0.7; margin-top:15px; line-height:30px; font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还有核能技术、航天技术、航空技术、激光技术、生物技术等等。</p>-->
+        
+        </div>
+        
+      
+        <!--尾部-->
+        <div id="footer">
+        	<div id="ft_bottom">
+            	<div id="footer_add1">
+                	<h4>联系我们</h4>
+                	<ul>
+                    	<li>
+                        	<a>电话：010-123456789</a>
+                        </li>
+                        <li>
+                        	<a>传真：010-123456789</a>
+                        </li>
+                        <li>
+                        	<a>地址：梧州职业学院三龙大道88号</a>
+                        </li>
+                        <li>
+                        	<a>邮编：530700</a>
+                        </li>
+                        <li>
+                        	<a>邮箱：2526193201@qq.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer_add2">
+                	<ul id="add2_ewm">
+                    	<li class="icon_tu icon-weixin"><a href="#"></a></li>
+                    	<li class="icon_tu icon-qq"><a href="#"></a></li>
+                        <li class="icon_tu icon-qqkongjian"><a href="#"></a></li>
+                        <li class="icon_tu icon-weibo"><a href="#"></a></li>
+                        <li class="icon_tu icon-zhongwen"><a href="#"></a></li>
+                        <li class="icon_tu icon-yingwen"><a href="#"></a></li>
+                        <li class="icon_tu icon-shouji"><a href="#"></a></li>
+                    </ul>
+                    <div id="add2_list">
+                    	<ul>
+                          	<li>
+								<a href="../index.html">中国启航</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../space flight/index.html">中国航天</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../china sailing/index.html">中国航海</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../aviation/index.html">中国航空</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li>
+								<a href="../about us/about.html">关于我们</a>
+							</li>
+                		</ul>
+                        <p>版权所有《2019》实验室小组</p>
+                    </div>
+                   
+                </div>
+            </div>
+             <ol class="box_ewm">
+                  <li><img src="../image/weix.jpg" width="162" height="150"></li>
+                   <li><img src="../image/qq.jpg"  width="162" height="150"></li>
+              </ol>
+        </div>
+	</body>
+</html>

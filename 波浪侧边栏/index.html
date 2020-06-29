@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<!-- <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'> -->
+		<!-- <meta name='apple-mobile-web-app-capable' content='yes'> -->
+		<!-- <meta name='apple-mobile-web-app-status-bar-style' content='black'> -->
+		 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		 <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0,  minimum-scale=1.0"/>
+		<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/> -->
+		<!-- <meta name='format-detection' content='telephone=no'> -->
+	<title>侧边栏</title>
+	<style>
+		*{
+			margin: 0px;
+			padding:0;
+			list-style: none;
+			text-decoration: none;
+		}
+		body{
+			background: #ccc;
+			font-size:12px;
+			/*font-size: 1.2rem;*/
+		}
+		html {font-size: 62.5%!important; /* 10÷16=62.5% */}
+		@media only screen and (min-width: 481px){
+		    footer {
+		        font-size: 50%!important; /* 15.04÷16=94% */
+		    }
+		}
+		@media only screen and (min-width: 561px){
+		    footer {
+		        font-size: 50%!important; /* 17.44÷16=109% */
+		    }
+		}
+		@media only screen and (min-width: 641px){
+		    footer {
+		        font-size: 50%!important; /* 20÷16=125% */
+		    }
+		}
+		@media only screen and (min-width: 300px){
+		    footer {
+		        font-size: 50%!important; /* 20÷16=125% */
+		    }
+		}
+		#demo{
+			position:fixed;
+			right: 0px;
+			top: 30%;
+			width: 150px;
+		}
+		#demo ul .item{
+			position: relative;
+			right: -100px;
+			border-bottom: 2px solid #333;
+			height: 50px;
+			line-height: 50px;
+			background: #fff;
+
+		}
+		#demo ul .item a span{
+			display:inline-block;
+			height: 50px;
+			width: 50px;
+			background: blue;
+			margin-right: 10px;
+			color: #fff;
+			text-align: center;
+			line-height: 50px;
+			font-size: 1.3em;
+			font-weight: bold;
+			transition: .5s;
+		}
+		#demo ul .item a strong{
+			color: #000;
+		}
+		#demo ul .item:hover span{
+			background: #fff;
+			color: #000;
+		}
+		/*导航栏begin*/
+		#nav{
+			width: 100%;
+			height: 50px;
+			background:#4aca6d;
+			margin: 80px auto;
+			/*text-align: center;
+			font-weight: bold;*/
+		}
+		#navBegin{
+			width: 1000px;
+			min-width: 1000px;
+			height: 50px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin:auto;
+		}
+		#navBegin li{
+			display: flex;
+			width: 110px;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+		#navBegin li a{
+			/*width: 110px;*/
+			height: 50px;
+			/*min-height:50px;*/
+			text-decoration: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.6rem;
+			font-weight: bold;
+			color: #fff;
+			position: relative;
+		}		
+		#navBegin li .triangle:after{
+			content: "";
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			right: -20px;
+			top: 23px;
+			border-top: 6px solid #fff;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			transition:0.5s;
+		}
+		#navBegin li a:hover:after{
+			transform: rotate(180deg);
+		}
+		
+		/*nav end*/
+		.imgs{
+			margin:auto;
+			width: 200px;
+			height: 200px;
+			border-radius:50%;
+			overflow: hidden;
+			animation:  demos 10s linear infinite;
+		}
+		footer{
+			/*font-size: 16px;*/
+			font-size: 1.6rem;
+			width:500px;
+			min-width: 500px;
+			min-height: 300px;
+			height: 300px;
+			background:red;
+			margin: auto;
+			text-indent: 2em;
+			text-align: justify;
+			padding: 10px 10px;
+			/*overflow: hidden;
+			text-overflow:ellipsis;
+			white-space: normal;*/
+		}
+		@keyframes demos {
+			20% { 
+				transform: rotate(30deg);
+			 }
+			30% { 
+				transform: rotate(60deg);
+			 }
+			40% { 
+				transform: rotate(90deg);
+			 }
+			50% { 
+				transform: rotate(110deg);
+			 }
+			60% { 
+				transform: rotate(140deg);
+			 }
+			70% { 
+				transform: rotate(170deg);
+			 }
+			  75% { 
+				transform: rotate(190deg);
+			 }
+			80% { 
+				transform: rotate(220deg);
+			 }
+			 85% { 
+				transform: rotate(240deg);
+			 }
+			90% { 
+				transform: rotate(260deg);
+			 }
+			 95% { 
+				transform: rotate(280deg);
+			 }
+			100% { 
+				transform: rotate(280deg);
+			 }
+		}
+	</style>
+</head>
+<body>
+	<div id="demo">
+		<ul>
+			<li class="item">
+				<a href="javascrupt:;">
+					<span>1</span>
+					<strong>html5</strong>
+				</a>
+			</li>
+			<li class="item">
+				<a href="javascrupt:;">
+					<span>2</span>
+					<strong>Vue</strong>
+				</a>
+			</li>
+			<li class="item">
+				<a href="javascrupt:;">
+					<span>3</span>
+					<strong>jquery</strong>
+				</a>
+			</li>
+			<li class="item">
+				<a href="javascrupt:;">
+					<span>4</span>
+					<strong>css3</strong>
+				</a>
+			</li>
+			<li class="item">
+				<a href="javascrupt:;">
+					<span>5</span>
+					<strong>javascript</strong>
+				</a>
+			</li>
+			<li class="item">
+				<a href="javascrupt:;">
+					<span>6</span>
+					<strong>server</strong>
+				</a>
+			</li>
+			<li class="item">
+				<a href="javascrupt:;">
+					<span>7</span>
+					<strong>C#</strong>
+				</a>
+			</li>
+			<li class="item">
+				<a href="javascrupt:;">
+					<span>8</span>
+					<strong>java</strong>
+				</a>
+			</li>
+			<li class="item">
+				<a href="javascrupt:;">
+					<span>9</span>
+					<strong>Web</strong>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- <nav id="nav">
+		<ul id="navBegin">	
+			<li><a href="" class="triangle">科技</a></li>
+			<li><a href="" class="triangle">教育</a></li>
+			<li><a href="" class="triangle">成就</a></li>
+			<li><a href="" class="triangle">发展</a></li>
+			<li><a href="">联系</a></li>
+			<li><a href="">反馈</a></li>
+		</ul>
+	</nav> -->
+	<!-- <section>
+		<div class="imgs"><img src="img/timg.jpg" alt="" width="200" height="200"></div>
+	</section> -->
+	<!-- <header>222</header> -->
+	<!-- <footer>
+		<p>10月3日凌晨圆满完成阅兵任务后 一辆辆战车陆续驶离阅兵训练场那一声声鸣笛，是最好的告别也是他们不舍的表达 受阅部队撤离归建
+			战旗精神常驻
+			日前，参加国庆70周年阅兵的15个徒步方队、32个装备方队开始以铁路输送、摩托化机动等方式，陆续从北京郊区阅兵训练场分批撤离归建。这些部队和装备来自全国各地。
+		</p>
+	</footer> -->
+	
+	<script src="js库/jquery-3.4.1.min.js"></script>
+	<script>
+		//animate
+		//关于setTimeOut和setInterval改变this指向的问题解决方法
+		$(function(){
+			$("#demo").hover(function(){
+				$(".item").each(function(index){
+					setTimeout(function(){
+						$(this).stop().animate({"right":"0px"});
+						console.log($(this).index());
+					}.bind(this),index*50);
+					//利用bind()方法   将this绑定到当前函数上
+				})	
+			},function(){
+				$(".item").each(function(index){
+					setTimeout(function(){
+						$(this).stop().animate({"right":"-100px"});
+					}.bind(this),index*50);
+				});
+			})
+		});
+	</script>
+</body>
+</html>

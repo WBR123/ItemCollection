@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清华新闻网</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+			font-size: 14px;
+			font-family: "微软雅黑";
+		}
+		body{
+			background-image: url(img/bg清华新闻网.jpg);
+			background-repeat: no-repeat;
+			background-size:100%;
+			background-position:0 -270px;
+			background-color: #FFF6E5;
+			height: 5000px;
+		}
+		#nav{
+			width: 100%;
+			height: 70px;
+			/*background-color: #bb0512;*/
+			position: relative;
+			top:0px;
+		}
+		.navs-bg{
+			width: 1000px;
+			height: 60px;
+			display: block;
+			/*background:pink;*/
+			position: absolute;
+			top: 0px;
+			left: 50%;
+			margin-left: -500px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;	
+		}
+		.navs-bg li{
+			flex: 1;
+			width: 80px;
+			height: 100%;
+			/*border: 1px solid white;*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.navs-bg li a{
+			font-size: 1.2em;
+			color: #f2ca60;
+			font-weight: 500;
+		}
+		.initialized{
+			position: relative;
+			margin:300px auto 0;
+			width: 1000px;
+			height: 460px;
+			/*overflow: hidden;*/
+		}
+		.section_2{
+			position: absolute;
+			width: 1000px;
+			height: 460px;
+		}
+		.section_2 div{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			display: none;
+		}
+		.section_2 div img{
+			width: 1000px;
+			height:460px;
+		}
+		.prev, .next{
+			position: absolute;
+			top: 50%;
+			width: 50px;
+			height: 60px;
+			margin-top: -25px;
+			/*border: 1px solid white;*/
+			background: #d80001;
+			text-align: center;
+			line-height: 60px;
+			font-size: 2em;
+			color: white;
+			cursor: pointer;
+			/*display: none;*/
+		}
+		.next{
+			right: -25px;
+		}
+		.prev{
+			left: -25px;
+		}
+		.liDiso{
+			position: absolute;
+			bottom: 20px;
+			width: 120px;
+			height: 30px;
+			left: 50%;
+			margin-left:-60px;
+			/*border: 1px solid red;*/
+			display: flex;
+		}
+		.liDiso li{
+			flex: 1;
+			width: 60px;
+			height: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+		}
+		.cur{
+			background-color: #c00000;
+			color:white;
+		}
+		.section_3{
+			width: 1000px;
+			height: 290px;
+			/*background-color: pink;*/
+			margin:60px auto 0px;
+		}
+		.section_3 ul{
+			width: 100%;
+			height: 138px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.section_3 ul li{
+			width: 225px;
+			height: 200px;
+			display: flex;
+			justify-content: space-between;
+			align-items:center;
+			position:relative;
+			cursor: pointer;
+		}
+		.section_3 ul li:hover span{
+			color:orange;
+		}
+		.section_3 ul li img{
+			width: 100%;
+			height: 138px;
+		}
+		.section_3 h2{
+			padding: 35px 0 25px 0;
+			font-size: 24px
+		}
+		.section_3 h2 a{
+			display: black;
+			color: #999;
+			font-size: 14px;
+			font-weight: normal;	
+			float: right;
+			line-height: 0px;
+		}
+		.section_3 ul li span{
+			font-size: 14px;
+			/*border: 1px solid red;*/
+			display: block;
+			position: absolute;
+			bottom: 1px;
+			text-indent: 1em;
+		}
+		.triangle::after{
+			content: '';
+			display: inline-block;
+			border: 6px solid transparent;
+			border-left: 6px solid #f5913b;
+			position: relative;
+			transform: rotate(90deg);
+			top: 6px;
+			left: 10px
+		}
+		.section_4{
+			width: 1000px;
+			height: 360px;
+			/*border: 1px solid red;*/
+			margin: 20px auto;
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+		}
+		.column_3{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 600px;
+			height:60px;
+			/*background: red;*/
+		}
+		.column_3 li{
+			width: 100px;
+			height:inherit;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		.column_4{
+			height: 290px;
+			width: 1000px;
+			/*background: green;*/
+			position: absolute;
+			bottom:0px;
+			box-shadow: 0 0 2px -1px #333;
+		}
+		.section_4 a{
+			display: block;
+			width: 100px;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			color: #333;
+		}
+		.column_4 div{
+			width: 1000px;
+			height: 250px;
+			position: absolute;
+			display: none;
+			/*border: 1px solid red;*/
+		}
+		.column_4 div h2{
+			padding: 20px 20px;
+			font-size: 20px;
+		}
+		.column_4 div p{
+			text-indent: 2em;
+			padding: 5px 20px;
+			line-height: 2em;
+		}
+		#ck{
+			display: inline-block;
+			width: 130px;
+			height: 50px;
+			border: 1px solid red;
+			text-align: center;
+			line-height: 50px;
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			margin-left: -60px;
+			border-radius: 20px;
+		}
+		.por{
+			border-bottom: 3px solid #c63a3b;
+		}
+		.topScroll{
+			width: 118px;
+			height: 300px;
+			/*background: red;*/
+			position:fixed;
+			background: url(img/topBg.png) no-repeat;
+			z-index:22;
+			right:10%;
+			top: 60%;
+			display: flex;
+			flex-wrap: wrap;/*换行*/
+			align-items:flex-start;/*单根线轴*/
+			align-content: flex-start;/*多根线轴*/
+		}
+		.topScroll div{
+			width: inherit;
+			height: 50px;
+			font-size: 14px;
+			color: white;
+			display:flex;
+			justify-content:center;
+			align-items: center;
+			box-sizing: border-box;
+			cursor: pointer;
+		}
+		.topScroll div:hover{
+			background:#e72727;
+		}
+		#clickScor{
+			text-align: center;
+			line-height: 50px;
+			display: none;
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+<body>
+	<nav id="nav">
+		<ul class="navs-bg">
+			<li><a href="javascript:;">首页</a></li>
+			<li><a href="javascript:;">国际新闻</a></li>
+			<li class="triangle"><a href="javascript:;">科技探索</a></li>
+			<li class="triangle"><a href="javascript:;">军事中心</a></li>
+			<li class="triangle"><a href="javascript:;">辉煌成就</a></li>
+			<li><a href="javascript:;">教育</a></li>
+			<li><a href="javascript:;">展望未来</a></li>
+			<li><a href="javascript:;">联系</a></li>
+		</ul>
+	</nav>
+	<div class="initialized ">
+		<div class="section_2">
+	<!-- 轮播图 -->
+			<div style="display:block;"><a href="javascript:;"><img src="img/banner1.jpg" alt=""></a></div>
+			<div><a href="javascript:;"><img src="img/banner2.jpg" alt=""></a></div>
+			<div><a href="javascript:;"><img src="img/banner3.jpg" alt=""></a></div>
+		</div>
+	<!-- 小正方体 -->
+		<ul class="liDiso">
+			<li class="cur">1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	<!-- 左右按钮 -->
+		<div class="prev">&lt;</div>
+		<div class="next">&gt;</div>
+	</div>
+	<div class="section_3">
+		<h2><a href="javascript:;">更多视频&gt;</a></h2>
+		<ul>
+			<li>
+				<img src="img/1.jpg" alt="">
+				<span>载誉而归 欢迎回家</span>
+			</li>
+			<li><img src="img/4.jpg" alt="">
+				<span>我和我的祖国</span>
+			</li>
+			<li>
+				<img src="img/3.jpg" alt="">
+				<span>祖国万岁 加油！</span>
+			</li>
+			<li>
+				<img src="img/2.jpg" alt="">
+				<span>国旗，从身边升起</span>
+			</li>
+		</ul>
+	</div>
+	<div class="section_4">
+		<ul class="column_3">
+			<li>学习强国</li>
+			<li>央视快评</li>
+			<li>壮丽70年</li>
+			<li>国际瑞评</li>
+		</ul>
+		<a href="javascript:;">更多&gt;</a>
+		<div class="column_4">
+			<div style="display:block;">
+				<h2>习近平谈中国国际进口博览会：迎五洲客，计天下利</h2>
+				<p>
+					国家主席习近平和夫人彭丽媛4日晚在上海举行宴会，欢迎出席第二届中国国际进口博览会的各国贵宾。习近平在致辞中强调，中国国际进口博览会交易的是商品和服务，交流的是文化和理念，迎的是五洲客，计的是天下利，顺应的是各国人民对美好生活的向往。
+				</p>
+				<a href="javascript:;" id="ck">了解更多</a>
+			</div>
+			<div>
+				<h2>以坚定的制度自信开辟中国特色社会主义新境界</h2>
+				<p>
+					本固而枝荣，根深而叶茂。党的十九届四中全会以专题聚焦“坚持和完善中国特色社会主义制度、推进国家治理体系和治理能力现代化”这个重大主题，总结历史性辉煌成就，制定纲领性重要文献，擘画立足长远的制度蓝图。</p>
+				<a href="javascript:;" id="ck">了解更多</a>
+			</div>
+			<div>
+				<h2>我国第一颗氢弹空爆试验成功</h2>
+				<p>
+					 1967年6月17日8时20分，我国第一颗氢弹空爆试验成功，实测当量330万吨，中国成为世界上第四个掌握氢弹技术的国家。+
+					“一切准备就绪。……震动世界的时刻来到了。”“骤然间，闪光万丈，碧蓝天空涌现出一个烈焰翻腾的大火球，只听一声天崩地裂的巨响，火球消失，一个蘑菇形状烟云上升。我国自己设计、自己制造的第一颗氢弹爆炸成功了！”1967年6月18日，人民日报刊发文章，对我国第一颗氢弹爆炸成功进行了纪实报道。
+				</p>
+				<a href="javascript:;" id="ck">了解更多</a>
+			</div>
+			<div>
+				<h2>国际锐评｜进博会“一位难求” 中国市场潜力超乎想象</h2>
+				<p>
+					第二届中国国际进口博览会将于周二（5日）在上海开幕。由于首届进博会大获成功，本届进博会备受期待，吸引全球150多个国家和地区的3000多家企业参加，规模更大、质量更优、活动也更丰富。在当前世界经济下行压力加大的背景下，世界各国开拓中国市场、搭乘中国发展“快车”的渴望显然更加热切。</p>
+				<a href="javascript:;" id="ck">了解更多</a>
+			</div>
+		</div>
+	</div>
+	<div class="topScroll">
+		<div>最新焦点</div>
+		<div>直播精仿</div>
+		<div>专题首页</div>
+		<div>视频专区</div>
+		<div id="clickScor">返回顶部</div>
+	</div>
+	<footer></footer>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+	$(function(){
+
+		var i = 0;
+		var timeInt = 4000;
+		var times =setInterval(play,timeInt);
+
+		function play() {
+			i++;
+			i=i>2?0:i;
+			$(".liDiso li").eq(i).addClass("cur").siblings().removeClass("cur");//数字123
+			$(".section_2 div").eq(i).fadeIn(500).siblings().fadeOut(500);//img
+		}
+
+		// 左按钮
+		$(".next").click(function(){
+			play();
+		})
+		//右按钮
+		$(".prev").click(function(){
+			i--;
+
+			i=i<0?2:i;
+
+			$(".liDiso li").eq(i).addClass("cur").siblings().removeClass("cur");
+			$(".section_2 div").eq(i).fadeIn(500).siblings().fadeOut(500);
+		})
+
+
+		// 默认让按钮隐藏 然后显示  清定时器
+		$(".initialized").hover(function(){
+			// $(".prev").fadeIn(500);
+			// $(".next").fadeIn(500);
+			clearInterval(times);
+
+		},function(){
+			// $(".prev").fadeOut(500);
+			// $(".next").fadeOut(500);
+			times =setInterval(play,timeInt);
+		})
+
+		//鼠标单击切换，淡入淡出
+	     $(".liDiso li").click(function() {
+	        $(this).addClass('cur').siblings().removeClass("cur");
+	        var index = $(this).index();
+	        i = index;//不加这句有个bug，鼠标移出小圆点后，自动轮播不是小圆点的后一个
+	        $(".section_2 div").eq(index).fadeIn(500).siblings().fadeOut(500);//图片
+	     });
+
+	     // 四个主题  默认显示第一个标题
+	     $(".column_3 li").eq(0).addClass("por");
+	     $(".column_3 li").click(function() {
+	        $(this).addClass('por').siblings().removeClass("por");
+	        var index = $(this).index();
+	        $(".column_4 div").eq(index).fadeIn(500).siblings().fadeOut(300);//图片
+	     });
+
+
+	     // 导航栏效果
+	     $(document).scroll(function(){
+	     	//获取当前滚动栏scroll的高度并赋值
+	     	var scrTop = $(window).scrollTop();
+	     	if (scrTop >= 120) {
+	     		$("#clickScor").fadeIn(500);//返回按钮显示
+	     		$('#nav').css({'position':'fixed','top':'0','background':'#bb0512',"z-index":"33"});
+	     	}else{
+	     		$("#clickScor").fadeOut(300);
+	     		$('#nav').css({'background':'transparent'});
+	     	}
+	     })
+
+	     // 返回顶部  使用动画效果实现
+	     $("#clickScor").click(function(){
+	     	if ($(window).scrollTop() > 90) {
+             	$("html,body").animate({ scrollTop: 0 }, 1000);
+             	return false;
+           	}
+	     })
+	     // end
+	});
+	</script>
+</body>
+</html>

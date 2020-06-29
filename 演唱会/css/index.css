@@ -1,0 +1,132 @@
+body {
+    /*padding-top: 50px;*/
+    padding-bottom: 100px;
+}
+
+.carousel-inner img {
+    filter: grayscale(90%); /*修改所有图片的颜色为灰白，（100%灰度）*/
+    -webkit-filter: grayscale(90%);
+}
+
+.op_nav {
+    opacity: 0.7;
+}
+
+.aa {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.main_padding {
+    margin-top: 85px;
+    padding-bottom: 85px;
+}
+
+.main_bg {
+    background: #222222;
+    color: white;
+}
+
+/*[class*="container-"]{
+	border: 1px solid red;
+	background: pink;
+}*/
+/*[class*="col-sm"]{
+	border: 10px solid red;
+	background: pink;
+}*/
+/*移去列表组的边框圆角*/
+.list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/*移去缩略图的边框和增加内边距*/
+.thumbnail {
+    /*padding: 0px 0px 105px 0px;*/
+    padding: 0px;
+    border-radius: 0;
+    border: none;
+}
+
+.pd_left {
+    position: relative;
+    left: -15px;
+}
+
+.pd_right {
+    position: relative;
+    right: -15px;
+}
+
+.thumbnail p {
+    margin-top: 20px;
+}
+
+.thumbnail button {
+    width: 80px;
+    height: 50px;
+    background: #222222;
+    color: white;
+    border: 1px solid #222222;
+    margin-bottom: 20px;
+}
+
+.goTop {
+    margin-top: 150px;
+}
+
+.navbar-fixed-bottom {
+    height: 100px;
+}
+
+/*弹出框居中*/
+#click_modal {
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.span_color {
+    color: white;
+}
+
+.span_color_b {
+    color: white;
+    border: 0px;
+    border-radius: 0px;
+    /*padding: 12px 24px;*/
+}
+
+.modal-header button {
+    position: relative;
+    top: 35px;
+    right: 30px;
+}
+/*.test{*/
+/*    background-color: white;*/
+/*}*/
+.test a{
+    /*background-color: white;*/
+    color: black;
+}
+/*#hover_nav li a {*/
+/*    color: black;*/
+/*    background: white;*/
+/*}*/
+
+/*#hover_nav li a :hover{*/
+/*    color: gray;*/
+/*    background: floralwhite;*/
+/*    font-family: '微软雅黑';*/
+/*}*/
+
+#hover_nav {
+    padding-right: 15px;
+}

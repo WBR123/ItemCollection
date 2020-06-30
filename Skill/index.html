@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<style type="text/css">
+			#btnRegiste,
+			#btnLogin{
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="nav navbar-fixed-top navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<span class="navbar-brand">Bootstrap</span>
+					<button class="navbar-toggle" data-toggle="collapse" type="button" data-target="#menu1">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="menu1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown" data-toggle="dropdown" role="button">前端技术</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown" data-toggle="dropdown" role="button">
+								最新技术
+								<span class="caret"></span>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">HTML</a>
+									</li>
+									<li>
+										<a href="#">css</a>
+									</li>
+									<li>
+										<a href="#">JavaScript</a>
+									</li>
+								</ul>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">关于</a>
+						</li>
+					</ul>
+					<div class="form-group navbar-right">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#btnLogin" id="myLogin" data-toggle="modal" data-keyboard="true" data-backdrop="static" data-dismiss="modal">登录</a>
+								<!--
+									data-keyboard="true":允许键盘Esc退出
+									data-backdrop="static"：单击背景不会消失
+									a标签href代替了button的data-target="#id"
+								-->
+							</li>
+							<li>
+								<a href="#btnRegiste" id="myRegiste" data-toggle="modal" data-keyboard="true" data-backdrop="static" data-dismiss="modal">注册</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!--轮播图	Start-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="carousel" id="myCarousel" data-ride="carousel">
+					<!--轮播图指标-->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>
+					<!--轮播图img-->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="img/img01.jpg" style="width: 100%;"/>
+						</div>
+						<div class="item">
+							<img src="img/img02.jpg" style="width: 100%;"/>
+						</div>
+						<div class="item">
+							<img src="img/img03.jpg" style="width: 100%;"/>
+						</div>
+						<div class="item">
+							<img src="img/img04.jpg" style="width: 100%;"/>
+						</div>
+					</div>
+
+					<a href="#myCarousel" class="carousel-control left" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a href="#myCarousel" class="carousel-control right" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--轮播图	End-->
+
+		<div class="container">
+
+			<div class="modal fade" id="btnLogin" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header nav navbar-inverse" style="color: white;">
+							<button class="close" type="button" data-dismiss="modal"><span class="glyphicon glyphicon-remove text-muted"></span></button>
+							<h3 class="modal-title">登录</h3>
+						</div>
+						<div class="modal-body">
+							<div class="form-horizontal">
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-offset-2 text-center">账号</label>
+									<div class="col-sm-7"><input type="text" class="form-control" /></div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-offset-2 text-center">密码</label>
+									<div class="col-sm-7"><input type="text" class="form-control" /></div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-3 col-sm-offset-3"><button type="button" class="btn btn-default form-control nav navbar-inverse" style="height: 50px; font-size: 16px;color: white;">登录</button></div>
+									<div class="col-sm-3 col-sm-offset-1"><button type="button" class="btn btn-default form-control nav navbar-inverse" style="height: 50px; font-size: 16px;color:white" data-dismiss=="modal">取消</button></div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-4 col-sm-offset-1 text-center"><a href="#btnRegiste" data-toggle="modal" data-dismiss="modal">还没有账号？ 点我注册</a></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="btnRegiste" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header nav navbar-inverse" style="color: white;">
+							<button class="close" type="button" data-dismiss="modal"><span class="glyphicon glyphicon-remove text-muted"></span></button>
+							<h3 class="modal-title">注册</h3>
+						</div>
+						<div class="modal-body">
+							<div class="form-horizontal">
+								<div class="form-group">
+									<label class="col-sm-2 text-center">账号</label>
+									<div class="col-sm-7"><input type="text" class="form-control" /></div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 text-center">密码</label>
+									<div class="col-sm-7"><input type="text" class="form-control" /></div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 text-center">确认密码</label>
+									<div class="col-sm-7"><input type="text" class="form-control" /></div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 text-center"></label>
+									<div class="col-sm-3"><button type="button" class="btn btn-default form-control nav navbar-inverse" style="height: 50px; font-size: 16px;color: white;">注册</button></div>
+									<div class="col-sm-3 col-sm-offset-1"><button type="button" class="btn btn-default form-control nav navbar-inverse" style="height: 50px; font-size: 16px;color:white" data-dismiss=="modal">取消</button></div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-4"><a href="#btnLogin" data-toggle="modal" data-dismiss="modal">还没有账号？ 点我登录</a></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h1>前端技术</h1>
+				<div class="col-sm-3">
+					<img src="img/content/jqueryapi.png" class="img-responsive img-thumbnail" />
+					<h3>jQuery API</h3>
+					<p>根据最新的jQuery 1.11.x和21.x版本翻译的jQuery API中交文档手册。</p>
+					<p>
+						<button type="button" class="btn btn-success">详细</button>
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/content/lesscss.png" class="img-responsive img-thumbnail" />
+					<h3>LESS</h3>
+					<p>LESS为CSS赋子了动态潇言的特性，如变量，继承，运算，函数。</p>
+					<p>
+						<button type="button" class="btn btn-success">详细</button>
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/content/nodejs.png" class="img-responsive img-thumbnail" />
+					<h3>Node.js</h3>
+					<p>Nodejs是一个基于Chrome V8引擎的JavaScnpt:运行环境。</p>
+					<p>
+						<button type="button" class="btn btn-success">详细</button>
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/content/react.png" class="img-responsive img-thumbnail" />
+					<h3>React</h3>
+					<p>React起源于Facebook的内部项目，是一个用于构建用户界面的JavaScripi库.</p>
+					<p>
+						<button type="button" class="btn btn-success">详细</button>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="img/content/sass.png" class="img-responsive img-circle" />
+					<h3>Sass</h3>
+					<p>Sass是一个成熟，稳定强大的CSS扩展语直解析器。</p>
+					<p>
+						<button type="button" class="btn btn-success">详细</button>
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/content/vuejs.png" class="img-responsive img-circle" />
+					<h3>Vue.js</h3>
+					<p>Wuejs-是一套构建用户界面的渐进式框筑。</p>
+					<p>
+						<button type="button" class="btn btn-success">详细</button>
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/content/w3schools.png" class="img-responsive img-circle" />
+					<h3>w3schools</h3>
+					<p>w3schools. com是最受欢迎的前端技术教程网站。</p>
+					<p>
+						<button type="button" class="btn btn-success">详细</button>
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/content/zeptojs.png" class="img-responsive img-circle" />
+					<h3>Zepto.js</h3>
+					<p>Zepojs是一个轻量级，兼容jQuery的JavaScrip工具库。</p>
+					<p>
+						<button type="button" class="btn btn-success">详细</button>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<h1>最新技术</h1>
+
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#tab1" data-toggle="tab">人工智能</a>
+					</li>
+					<li>
+						<a href="#tab2" data-toggle="tab">深度学习</a>
+					</li>
+					<li>
+						<a href="#tab3" data-toggle="tab">区块链</a>
+					</li>
+					<li>
+						<a href="#tab4" data-toggle="tab">Hadoop</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="tab1">
+						<div class="col-sm-8">
+							<h3>人工智能介绍</h3>
+							<p>
+								人工智能Articial Itellgence)，英文缩写为A.它是研究。开发用于模拟、延伸和扩展人的智能的理论。方法。技术及应用系统的一门新的技术科学。
+							</p>
+							<p>
+								人工智能是计算机科学的一个分支，它企图了解智能的实质，井生产出一种人语言识别。圆像识别、自然酒言处理和专家系统等。人语言识别。圆像识别、自然酒言处理和专家系统等。
+							</p>
+							<p>
+								人工智能是一门极挑战性的科学，从事这项工作的人必须懂得计算机知识，心理学和哲学。人工智能是包括十分广泛的科学，它由不同的领域组成，如机器学习，计算机规觉等。2017年12月,人工智能入选2017年度中国媒体十大流行语。
+							</p>
+							<p><button type="button" class="btn btn-success" class="img-thumbnail">详细了解</button></p>
+						</div>
+						<div class="col-sm-4">
+							<img src="img/content/AI.jpg" />
+						</div>
+					</div>
+					<div class="tab-pane" id="tab2">
+						<div class="col-sm-8">
+							<h3>深度学习介绍</h3>
+							<p>
+								深度学习(Deep Learming)的概念源于人工神经网络的研究。含多隐层的多层感知器就是一种深度学习结构。深度学习通过组合低层特征形成更加抽象的高层表示属性类別或特征，以发现数据的分布式特征表示，
+							</p>
+							<p>
+								深度学习是机器学习研究中的一个新的领域，其动机在于建立。模拟人脑进行分析学习的神经网络，它模仿人脑的机制来解释数据，例如图像，声音和文本。
+							</p>
+							<p><button type="button" class="btn btn-success">详细了解</button></p>
+						</div>
+						<div class="col-sm-4">
+							<img src="img/content/deeplearning.jpeg" class="img-thumbnail" />
+						</div>
+					</div>
+					<div class="tab-pane" id="tab3">
+						<div class="col-sm-8">
+							<h3>区块链介绍</h3>
+							<p>
+								狭义来讲，区块链是-种按照时间顺序将数据区块以顺序相准的方式组合成的一种链式数据结构，并以密码学方式保证的不可靠改和不可伪造的分布式账本。
+							</p>
+							<p>
+								广文来讲，区块链技术是利用块链式数据结构来验证与存储数据，利用分布式节点共识算法来生成和更新数据，利用密码学的方式保证数据慢输和访问的安全。利用由自动化脚本代码组成的智能台约来编程和操作数据的-种全新的分布式基础架构与计算范式。
+							</p>
+							<p><button type="button" class="btn btn-success">详细了解</button></p>
+						</div>
+						<div class="col-sm-4">
+							<img src="img/content/qukuailian.jpeg" class="img-thumbnail" />
+						</div>
+					</div>
+					<div class="tab-pane" id="tab4">
+						<div class="col-sm-8">
+							<h3>Hadoop介绍</h3>
+							<p>
+								Hadoop是个由Apache基全会所开发的分布式系统基础架构。用户可以在不了解分布式底层烟节的情况下，开发分布式程序。充分利用集群的威力进行高速运算和存储。
+							</p>
+							<p>
+								Haoop的框架最核心的设计就是: HDFS和MapReduce. HOFS为海量的數据提供了存储，则MapReduce为海量的数据提供了计算。
+							</p>
+							<p><button type="button" class="btn btn-success">详细了解</button></p>
+						</div>
+						<div class="col-sm-4">
+							<img src="img/content/hadoop.jpeg" class="img-thumbnail" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<nav class="nav navbar-fixed-bottom navbar-inverse">
+			<div class="container-fluid text-center text-muted">
+				<p>@2020 AI Rights Reserved</p>
+				<p>联系方式: QQ: 123123123 邮箱: 123123123 @qq.com</p>
+			</div>
+		</nav>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,27 @@
+body {
+				padding-top: 70px;
+				padding-bottom: 70px;
+			}
+			
+			* {
+				list-style: none;
+			}
+			
+			.tab-pane img {
+				padding: 15px;
+				height: 250px;
+				width: 360px;
+			}
+			
+			.tab-content {
+				height: 350px;
+			}
+			
+			#container-fluid {
+				position: relative;
+				display: block;
+				height: 400px;
+				overflow: hidden;
+			}
+
+			
